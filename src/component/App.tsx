@@ -1,6 +1,6 @@
 // import bulma
 import 'bulma/css/bulma.min.css';
-// import profile picture public/
+import Header from './header';
 function App() {
     return (
         <section className="section has-background-link-light">
@@ -8,26 +8,9 @@ function App() {
                 <div className="columns is-centered">
                     <div className="column box has-background-white is-8 p-6">
                         <div style={{ textAlign: "center" }}>
-                            <a
-                                href="cv_eng.html"
-                                className="button is-link is-inverted is-size-7"
-                            >
-                                CV in english
-                            </a>
+                            <a href="cv_eng.html" className="button is-link is-inverted is-size-7">CV in english</a>
                         </div>
-                        <div className="columns is-vcentered">
-                            <div className="column is-3">
-                                <figure className="image is-128x128">
-                                    <img className="is-rounded" src={process.env.PUBLIC_URL + '/profile.jpeg'} alt="Ronald Bello" />
-                                </figure>
-                            </div>
-                            <div className="column">
-                                <h1 className="title">Ronald Bello</h1>
-                                <h2 className="subtitle is-6">
-                                    Senior Backend Developer • Ing. de Sistemas • Backend Lover
-                                </h2>
-                            </div>
-                        </div>
+                        <Header />
                         <div className="columns">
                             <div className="column is-9">
                                 <div className="content">
