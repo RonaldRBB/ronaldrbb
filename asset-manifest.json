@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/ronaldrbb/static/css/main.d10d2dd6.css",
-    "main.js": "/ronaldrbb/static/js/main.f45f8403.js",
+    "main.js": "/ronaldrbb/static/js/main.6a4c1dad.js",
     "index.html": "/ronaldrbb/index.html",
     "main.d10d2dd6.css.map": "/ronaldrbb/static/css/main.d10d2dd6.css.map",
-    "main.f45f8403.js.map": "/ronaldrbb/static/js/main.f45f8403.js.map"
+    "main.6a4c1dad.js.map": "/ronaldrbb/static/js/main.6a4c1dad.js.map"
   },
   "entrypoints": [
     "static/css/main.d10d2dd6.css",
-    "static/js/main.f45f8403.js"
+    "static/js/main.6a4c1dad.js"
   ]
 }
