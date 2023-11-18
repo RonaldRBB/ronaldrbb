@@ -1,6 +1,6 @@
 
 interface DownloadCV {
-    spanish: string;
-    english: string;
+    lang: string
+    file_name: string
 }
 export default DownloadCV

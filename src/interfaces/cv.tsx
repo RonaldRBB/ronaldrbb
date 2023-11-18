@@ -1,6 +1,5 @@
 import Details from "./details";
-import Links from "./links";
-import Language from "./language";
+import Link from "./link";
 import DownloadCV from "./download_cv";
 import Experience from "./experience";
 import Education from "./education";
@@ -9,9 +8,9 @@ interface CV {
     title: string;
     aboutMe: string;
     details: Details;
-    links: Links;
-    languages: Language[];
-    downloadCV: DownloadCV;
+    links: Link[];
+    languages: string[];
+    downloadCV: DownloadCV[];
     experience: Experience[];
     education: Education;
 }

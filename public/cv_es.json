@@ -3,50 +3,34 @@
     "title": "Desarrollador Backend - Ingeniero de Sistemas - Backend Lover",
     "aboutMe": "Desarrollador Full Stack apasionado con experiencia desde 2012 en PHP, Python, Laravel, y Node.js. Especializado en el desarrollo de API REST, Microservicios, integración de servicios externos y aplicaciones web. Comprometido a contribuir positivamente a la calidad del producto y la experiencia del usuario.",
     "details": {
-        "location": {
-            "value": null,
-            "name": "CABA, Argentina",
-            "link": null
-        },
-        "email": {
-            "value": null,
-            "name": "ronaldbello2@gmail.com",
-            "link": "mailto"
-        },
-        "phone": {
-            "value": "+54 9 11 3946-4316",
-            "name": "+54 9 11 3946-4316",
-            "link": null
-        }
+        "location": "CABA, Argentina",
+        "email": "ronaldbello2@gmail.com",
+        "phone": "+54 9 11 3946-4316"
     },
-    "links": {
-        "linkedin": {
-            "value": "https://www.linkedin.com/in/ronaldrbb",
+    "links": [
+        {
             "name": "linkedin",
-            "link": "href"
+            "value": "https://www.linkedin.com/in/ronaldrbb"
         },
-        "github": {
-            "value": "https://github.com/ronaldrbb",
+        {
             "name": "github",
-            "link": "href"
+            "value": "https://github.com/ronaldrbb"
         }
-    },
-    "languages": {
-        "spanish": {
-            "value": null,
-            "name": "Español Nativo",
-            "link": null
+    ],
+    "languages": [
+        "Español Nativo",
+        "Ingles Intermedio"
+    ],
+    "downloadCV": [
+        {
+            "lang": "es",
+            "file_name": "ronald_bello_backend_dev.pdf"
         },
-        "english": {
-            "value": null,
-            "name": "Ingles Intermedio",
-            "link": null
+        {
+            "lang": "en",
+            "file_name": "ronald_bello_backend_dev_eng.pdf"
         }
-    },
-    "downloadCV": {
-        "spanish": "docs/ronald_bello_backend_dev.pdf",
-        "english": "docs/ronald_bello_backend_dev_eng.pdf"
-    },
+    ],
     "experience": [
         {
             "position": "Desarrollador Backend",

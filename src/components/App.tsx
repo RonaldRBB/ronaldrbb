@@ -57,7 +57,7 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
 
         return (
             <section className="section has-background-link-light">
-                <div className="container ">
+                <div className="container">
                     <div className="columns is-centered">
                         <div className="column box has-background-white is-8 p-6">
                             <div style={{ textAlign: "center" }}>
@@ -74,7 +74,12 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
                                     <Main aboutMe={cv.aboutMe} />
                                 </div>
                                 <div className="column">
-                                    <Aside details={cv.details} links={cv.links} languages={cv.languages} pdf={cv.downloadCV} />
+                                    <Aside
+                                        details={cv.details}
+                                        links={cv.links}
+                                        languages={cv.languages}
+                                        DownloadCvs={cv.downloadCV}
+                                    />
                                 </div>
                             </div>
                         </div>

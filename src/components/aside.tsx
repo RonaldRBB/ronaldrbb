@@ -1,58 +1,60 @@
 import React from "react";
 import Details from "../interfaces/details";
-import Links from "../interfaces/links";
-import Language from "../interfaces/language";
+import Link from "../interfaces/link";
 import DownloadCV from "../interfaces/download_cv";
-class Aside extends React.Component<{ details: Details, links: Links, languages: Language[], pdf: DownloadCV }> {
-    getAsideObj(object: Details | Links | Language[]): JSX.Element[] {
-        return Object.entries(object).map(([key, value]) => (
-            <li key={"aside-" + key}>
-                {value.link === 'mailto' ? (
-                    <a href={`mailto:${value.value}`} target="_blank" rel="noreferrer">{value.name}</a>
-                ) : value.link === 'href' ? (
-                    <a href={value.value} target="_blank" rel="noreferrer">{value.name}</a>
-                ) : (
-                    value.name
-                )}
+class Aside extends React.Component<{ details: Details, links: Link[], languages: string[], DownloadCvs: DownloadCV[] }> {
+    renderDetails(): JSX.Element {
+        return (
+            <>
+                <li>{this.props.details.location}</li>
+                <li><a href={"mailto:" + this.props.details.email}>{this.props.details.email}</a></li>
+                <li>{this.props.details.phone}</li>
+            </>
+        )
+    }
+    renderLiks(): JSX.Element[] {
+        return this.props.links.map((link) => (
+            <li key={"aside-" + link.name}>
+                <a href={link.value} target="_blank" rel="noreferrer">{link.name}</a>
             </li>
         ));
     }
+    renderLanguages(): JSX.Element[] {
+        return this.props.languages.map((language, index) => (
+            <li key={"aside-" + index}>{language}</li>
+        ));
+    }
+    renderButtons(): JSX.Element[] | null {
+        console.log(this.props.DownloadCvs)
+        return this.props.DownloadCvs.map((pdf) => (
+            
+            < a key={"aside-" + pdf.lang}
+                download=""
+                href={process.env.PUBLIC_URL + "/" + pdf.file_name}
+                className="button is-link" >
+                {pdf.lang}
+            </a >
+        ))
+    }
     render() {
-        const details = this.getAsideObj(this.props.details);
-        const links = this.getAsideObj(this.props.links);
-        const languages = this.getAsideObj(this.props.languages);
         return (
             <div className="content">
                 <h2 className="title is-5">Detalles</h2>
-
                 <ul style={{ listStyle: "none" }}>
-                    {details}
+                    {this.renderDetails()}
                 </ul>
                 <h2 className="title is-5">Links</h2>
                 <ul style={{ listStyle: "none" }}>
-                    {links}
+                    {this.renderLiks()}
                 </ul>
                 <h2 className="title is-5">Lenguajes</h2>
                 <ul style={{ listStyle: "none" }}>
-                    {languages}
+                    {this.renderLanguages()}
                 </ul>
                 <h2 className="title is-5">Descargar CV</h2>
                 <ul style={{ listStyle: "none" }}>
                     <div className="buttons">
-                        <a
-                            href={this.props.pdf.spanish}
-                            download=""
-                            className="button is-link"
-                        >
-                            Esp
-                        </a>
-                        <a
-                            href={this.props.pdf.english}
-                            download=""
-                            className="button is-link"
-                        >
-                            Eng
-                        </a>
+                        {this.renderButtons()}
                     </div>
                 </ul>
             </div>

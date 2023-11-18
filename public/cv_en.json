@@ -7,22 +7,30 @@
         "email": "ronaldbello2@gmail.com",
         "phone": "+54 9 11 3946-4316"
     },
-    "links": {
-        "linkedin": "https://www.linkedin.com/in/ronaldrbb",
-        "github": "https://github.com/ronaldrbb"
-    },
-    "languages": [
+    "links": [
         {
-            "spanish": "Native"
+            "name": "linkedin",
+            "value": "https://www.linkedin.com/in/ronaldrbb"
         },
         {
-            "english": "Intermediate"
+            "name": "github",
+            "value": "https://github.com/ronaldrbb"
         }
     ],
-    "downloadCV": {
-        "spanish": "docs/ronald_bello_backend_dev.pdf",
-        "english": "docs/ronald_bello_backend_dev_eng.pdf"
-    },
+    "languages": [
+        "Spanish Native",
+        "English Intermediate"
+    ],
+    "downloadCV": [
+        {
+            "lang": "es",
+            "file_name": "ronald_bello_backend_dev.pdf"
+        },
+        {
+            "lang": "en",
+            "file_name": "ronald_bello_backend_dev_eng.pdf"
+        }
+    ],
     "experience": [
         {
             "position": "Backend Developer",
