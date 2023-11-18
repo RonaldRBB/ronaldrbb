@@ -1,16 +1,13 @@
 {
   "files": {
-    "main.css": "/ronaldrbb/static/css/main.f855e6bc.css",
-    "main.js": "/ronaldrbb/static/js/main.1e0544b5.js",
-    "static/js/787.bc964cbf.chunk.js": "/ronaldrbb/static/js/787.bc964cbf.chunk.js",
-    "static/media/logo.svg": "/ronaldrbb/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/ronaldrbb/static/css/main.d10d2dd6.css",
+    "main.js": "/ronaldrbb/static/js/main.78f19778.js",
     "index.html": "/ronaldrbb/index.html",
-    "main.f855e6bc.css.map": "/ronaldrbb/static/css/main.f855e6bc.css.map",
-    "main.1e0544b5.js.map": "/ronaldrbb/static/js/main.1e0544b5.js.map",
-    "787.bc964cbf.chunk.js.map": "/ronaldrbb/static/js/787.bc964cbf.chunk.js.map"
+    "main.d10d2dd6.css.map": "/ronaldrbb/static/css/main.d10d2dd6.css.map",
+    "main.78f19778.js.map": "/ronaldrbb/static/js/main.78f19778.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.1e0544b5.js"
+    "static/css/main.d10d2dd6.css",
+    "static/js/main.78f19778.js"
   ]
 }
