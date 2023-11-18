@@ -1,5 +1,9 @@
 import React from "react";
-class Header extends React.Component {
+class Header extends React.Component<{ name: string }> {
+    constructor(props: { name: string }) {
+        super(props);
+        console.log(props.name);
+    }
     render() {
         return (
             <div className="columns is-vcentered">
@@ -9,7 +13,7 @@ class Header extends React.Component {
                     </figure>
                 </div>
                 <div className="column">
-                    <h1 className="title">Ronald Bello</h1>
+                    <h1 className="title">{this.props.name}</h1>
                     <h2 className="subtitle is-6">
                         Senior Backend Developer • Ing. de Sistemas • Backend Lover
                     </h2>
