@@ -18,13 +18,12 @@ class App extends React.Component<{}, { cv: CV | null }> {
                 const response = await fetch(`${process.env.PUBLIC_URL}/cv_es.json`);
                 const jobsData = await response.json();
                 this.setState({ cv: jobsData });
-                console.log("min name", jobsData.name);
             } catch (error) {
                 console.error('Error fetching jobs data:', error);
             }
         };
         // setTimeout(() => {
-            fetchData();
+        fetchData();
         // }, 5000);
     }
     render() {
