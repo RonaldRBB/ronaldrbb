@@ -4,25 +4,30 @@
     "aboutMe": "Desarrollador Full Stack apasionado con experiencia desde 2012 en PHP, Python, Laravel, y Node.js. Especializado en el desarrollo de API REST, Microservicios, integración de servicios externos y aplicaciones web. Comprometido a contribuir positivamente a la calidad del producto y la experiencia del usuario.",
     "details": {
         "location": {
-            "value": "CABA, Argentina",
+            "value": null,
+            "name": "CABA, Argentina",
             "link": null
         },
         "email": {
-            "value": "ronaldbello2@gmail.com",
+            "value": null,
+            "name": "ronaldbello2@gmail.com",
             "link": "mailto"
         },
         "phone": {
             "value": "+54 9 11 3946-4316",
+            "name": "+54 9 11 3946-4316",
             "link": null
         }
     },
     "links": {
         "linkedin": {
             "value": "https://www.linkedin.com/in/ronaldrbb",
+            "name": "linkedin",
             "link": "href"
         },
         "github": {
             "value": "https://github.com/ronaldrbb",
+            "name": "github",
             "link": "href"
         }
     },
