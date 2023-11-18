@@ -6,10 +6,12 @@ class Aside extends React.Component<{ details: Details, links: Links, languages:
     renderAsideObj(object: Details | Links | Language[]): JSX.Element[] {
         return Object.entries(object).map(([key, value]) => (
             <li key={"aside-" + key}>
-                {value.link === 'mailto' || value.link === 'href' ? (
-                    <a href={`mailto:${value}`}>{value.value}</a>
+                {value.link === 'mailto' ? (
+                    <a href={`mailto:${value.value}`} target="_blank" rel="noreferrer">{value.name}</a>
+                ) : value.link === 'href' ? (
+                    <a href={value.value} target="_blank" rel="noreferrer">{value.name}</a>
                 ) : (
-                    value.value
+                    value.name
                 )}
             </li>
         ));
