@@ -27,7 +27,7 @@ class Aside extends React.Component<{ details: Details, links: Links, languages:
                     {details}
                 </ul>
                 <h2 className="title is-5">Links</h2>
-                <ul style={{ listStyleType: "none" }}>
+                <ul style={{ listStyle: "none" }}>
                     {links}
                 </ul>
                 <h2 className="title is-5">Lenguajes</h2>

@@ -34,13 +34,15 @@
     "languages": [
         {
             "spanish": {
-                "value": "Español Nativo",
+                "value": null,
+                "name": "Español Nativo",
                 "link": null
             }
         },
         {
             "english": {
-                "value": "Ingles Intermedio",
+                "value": null,
+                "name": "Ingles Intermedio",
                 "link": null
             }
         }
