@@ -1,31 +1,36 @@
 import React from "react";
-class Aside extends React.Component {
+import Details from "../interfaces/details";
+import Links from "../interfaces/links";
+import Language from "../interfaces/language";
+class Aside extends React.Component<{ details: Details, links: Links, languages: Language[] }> {
+    renderAsideObj(object: Details | Links | Language[]): JSX.Element[] {
+        return Object.entries(object).map(([key, value]) => (
+            <li key={"aside-" + key}>
+                {value.link === 'mailto' || value.link === 'href' ? (
+                    <a href={`mailto:${value}`}>{value.value}</a>
+                ) : (
+                    value.value
+                )}
+            </li>
+        ));
+    }
     render() {
+        const details = this.renderAsideObj(this.props.details);
+        const links = this.renderAsideObj(this.props.links);
+        const languages = this.renderAsideObj(this.props.languages);
         return (
             <div className="content">
                 <h2 className="title is-5">Detalles</h2>
                 <ul style={{ listStyle: "none" }}>
-                    <li>CABA, Argentina</li>
-                    <li>
-                        <a href="mailto:ronaldbello2@gmail.com">
-                            ronaldbello2@gmail.com
-                        </a>
-                    </li>
-                    <li>+54 9 11 3946-4316</li>
+                    {details}
                 </ul>
                 <h2 className="title is-5">Links</h2>
                 <ul style={{ listStyleType: "none" }}>
-                    <li>
-                        <a href="https://www.linkedin.com/in/ronaldrbb">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/ronaldrbb">GitHub</a>
-                    </li>
+                    {links}
                 </ul>
                 <h2 className="title is-5">Lenguajes</h2>
                 <ul style={{ listStyle: "none" }}>
-                    <li>Español (Nativo)</li>
-                    <li>Inglés (Intermedio)</li>
+                    {languages}
                 </ul>
                 <h2 className="title is-5">Descargar CV</h2>
                 <ul style={{ listStyle: "none" }}>

@@ -1,9 +1,8 @@
 import React from "react";
-class Header extends React.Component<{ name: string }> {
-    constructor(props: { name: string }) {
-        super(props);
-        console.log(props.name);
-    }
+class Header extends React.Component<{ name: string, title: string }> {
+    // constructor(props: { name: string, title: string }) {
+    //     super(props);
+    // }
     render() {
         return (
             <div className="columns is-vcentered">
@@ -14,9 +13,7 @@ class Header extends React.Component<{ name: string }> {
                 </div>
                 <div className="column">
                     <h1 className="title">{this.props.name}</h1>
-                    <h2 className="subtitle is-6">
-                        Senior Backend Developer • Ing. de Sistemas • Backend Lover
-                    </h2>
+                    <h2 className="subtitle is-6">{this.props.title}</h2>
                 </div>
             </div>
         )

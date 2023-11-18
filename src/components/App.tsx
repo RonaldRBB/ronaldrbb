@@ -2,10 +2,8 @@
 import 'bulma/css/bulma.min.css';
 import React from 'react';
 import Header from './header';
-import Job from './job';
-import Education from './education';
 import Aside from './aside';
-import Description from './description';
+import Main from './main';
 import CV from '../interfaces/cv';
 class App extends React.Component<{}, { cv: CV | null }> {
     constructor(props: any) {
@@ -15,8 +13,6 @@ class App extends React.Component<{}, { cv: CV | null }> {
         };
     }
     componentDidMount() {
-        // wait 5 seconds before fetching data
-
         const fetchData = async () => {
             try {
                 const response = await fetch(`${process.env.PUBLIC_URL}/cv_es.json`);
@@ -27,9 +23,9 @@ class App extends React.Component<{}, { cv: CV | null }> {
                 console.error('Error fetching jobs data:', error);
             }
         };
-        setTimeout(() => {
+        // setTimeout(() => {
             fetchData();
-        }, 5000);
+        // }, 5000);
     }
     render() {
         const { cv } = this.state;
@@ -44,27 +40,19 @@ class App extends React.Component<{}, { cv: CV | null }> {
                             <div style={{ textAlign: "center" }}>
                                 <a href="cv_eng.html" className="button is-link is-inverted is-size-7">CV in english</a>
                             </div>
-                            <Header name={cv?.name} />
+                            <Header name={cv.name} title={cv.title} />
                             <div className="columns">
                                 <div className="column is-9">
-                                    <div className="content">
-                                        <h2 className="title is-4">• Sobre mí</h2>
-                                        <Description />
-                                        <h2 className="title is-4">• Experiencia</h2>
-                                        <Job />
-                                        <h2 className="title is-4">• Formación Académica</h2>
-                                        <Education />
-                                    </div>
+                                    <Main aboutMe={cv.aboutMe} />
                                 </div>
                                 <div className="column">
-                                    <Aside />
+                                    <Aside details={cv.details} links={cv.links} languages={cv.languages} />
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-
         );
     }
 }

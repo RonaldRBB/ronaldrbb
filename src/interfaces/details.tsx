@@ -1,6 +1,15 @@
 interface Details {
-    location: string;
-    email: string;
-    phone: string;
+    location: {
+        value: string;
+        link: string | null;
+    };
+    email: {
+        value: string;
+        link: string | null;
+    };
+    phone: {
+        value: string;
+        link: string | null;
+    };
 }
-export default Details
+export default Details;

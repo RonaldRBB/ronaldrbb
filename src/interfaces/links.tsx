@@ -1,6 +1,12 @@
 
 interface Links {
-    linkedin: string;
-    github: string;
+    linkedin: {
+        value: string;
+        link: string | null;
+    };
+    github: {
+        value: string;
+        link: string | null;
+    };
 }
 export default Links

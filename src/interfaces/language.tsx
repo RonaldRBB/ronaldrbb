@@ -1,4 +1,7 @@
 interface Language {
-    [key: string]: string;
+    [key: string]: {
+        value: string;
+        link: string | null;
+    };
 }
 export default Language

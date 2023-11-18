@@ -3,20 +3,41 @@
     "title": "Desarrollador Backend - Ingeniero de Sistemas - Backend Lover",
     "aboutMe": "Desarrollador Full Stack apasionado con experiencia desde 2012 en PHP, Python, Laravel, y Node.js. Especializado en el desarrollo de API REST, Microservicios, integración de servicios externos y aplicaciones web. Comprometido a contribuir positivamente a la calidad del producto y la experiencia del usuario.",
     "details": {
-        "location": "CABA, Argentina",
-        "email": "ronaldbello2@gmail.com",
-        "phone": "+54 9 11 3946-4316"
+        "location": {
+            "value": "CABA, Argentina",
+            "link": null
+        },
+        "email": {
+            "value": "ronaldbello2@gmail.com",
+            "link": "mailto"
+        },
+        "phone": {
+            "value": "+54 9 11 3946-4316",
+            "link": null
+        }
     },
     "links": {
-        "linkedin": "https://www.linkedin.com/in/ronaldrbb",
-        "github": "https://github.com/ronaldrbb"
+        "linkedin": {
+            "value": "https://www.linkedin.com/in/ronaldrbb",
+            "link": "href"
+        },
+        "github": {
+            "value": "https://github.com/ronaldrbb",
+            "link": "href"
+        }
     },
     "languages": [
         {
-            "spanish": "Nativo"
+            "spanish": {
+                "value": "Español Nativo",
+                "link": null
+            }
         },
         {
-            "english": "Intermedio"
+            "english": {
+                "value": "Ingles Intermedio",
+                "link": null
+            }
         }
     ],
     "downloadCV": {
