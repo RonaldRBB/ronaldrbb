@@ -45,7 +45,7 @@ class App extends React.Component<{}, { cv: CV | null }> {
                                     <Main aboutMe={cv.aboutMe} />
                                 </div>
                                 <div className="column">
-                                    <Aside details={cv.details} links={cv.links} languages={cv.languages} />
+                                    <Aside details={cv.details} links={cv.links} languages={cv.languages} pdf={cv.downloadCV} />
                                 </div>
                             </div>
                         </div>

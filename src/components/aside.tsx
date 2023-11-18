@@ -2,8 +2,9 @@ import React from "react";
 import Details from "../interfaces/details";
 import Links from "../interfaces/links";
 import Language from "../interfaces/language";
-class Aside extends React.Component<{ details: Details, links: Links, languages: Language[] }> {
-    renderAsideObj(object: Details | Links | Language[]): JSX.Element[] {
+import DownloadCV from "../interfaces/download_cv";
+class Aside extends React.Component<{ details: Details, links: Links, languages: Language[], pdf: DownloadCV }> {
+    getAsideObj(object: Details | Links | Language[]): JSX.Element[] {
         return Object.entries(object).map(([key, value]) => (
             <li key={"aside-" + key}>
                 {value.link === 'mailto' ? (
@@ -17,12 +18,13 @@ class Aside extends React.Component<{ details: Details, links: Links, languages:
         ));
     }
     render() {
-        const details = this.renderAsideObj(this.props.details);
-        const links = this.renderAsideObj(this.props.links);
-        const languages = this.renderAsideObj(this.props.languages);
+        const details = this.getAsideObj(this.props.details);
+        const links = this.getAsideObj(this.props.links);
+        const languages = this.getAsideObj(this.props.languages);
         return (
             <div className="content">
                 <h2 className="title is-5">Detalles</h2>
+
                 <ul style={{ listStyle: "none" }}>
                     {details}
                 </ul>
@@ -38,14 +40,14 @@ class Aside extends React.Component<{ details: Details, links: Links, languages:
                 <ul style={{ listStyle: "none" }}>
                     <div className="buttons">
                         <a
-                            href={process.env.PUBLIC_URL + "/ronald_bello_backend_dev.pdf"}
+                            href={this.props.pdf.spanish}
                             download=""
                             className="button is-link"
                         >
                             Esp
                         </a>
                         <a
-                            href={process.env.PUBLIC_URL + "/ronald_bello_backend_dev_eng.pdf"}
+                            href={this.props.pdf.english}
                             download=""
                             className="button is-link"
                         >

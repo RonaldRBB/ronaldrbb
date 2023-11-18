@@ -31,22 +31,18 @@
             "link": "href"
         }
     },
-    "languages": [
-        {
-            "spanish": {
-                "value": null,
-                "name": "Español Nativo",
-                "link": null
-            }
+    "languages": {
+        "spanish": {
+            "value": null,
+            "name": "Español Nativo",
+            "link": null
         },
-        {
-            "english": {
-                "value": null,
-                "name": "Ingles Intermedio",
-                "link": null
-            }
+        "english": {
+            "value": null,
+            "name": "Ingles Intermedio",
+            "link": null
         }
-    ],
+    },
     "downloadCV": {
         "spanish": "docs/ronald_bello_backend_dev.pdf",
         "english": "docs/ronald_bello_backend_dev_eng.pdf"
