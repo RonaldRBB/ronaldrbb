@@ -38,14 +38,14 @@ class Aside extends React.Component<{ details: Details, links: Links, languages:
                 <ul style={{ listStyle: "none" }}>
                     <div className="buttons">
                         <a
-                            href="docs/ronald_bello_backend_dev.pdf"
+                            href={process.env.PUBLIC_URL + "/ronald_bello_backend_dev.pdf"}
                             download=""
                             className="button is-link"
                         >
                             Esp
                         </a>
                         <a
-                            href="docs/ronald_bello_backend_dev_eng.pdf"
+                            href={process.env.PUBLIC_URL + "/ronald_bello_backend_dev_eng.pdf"}
                             download=""
                             className="button is-link"
                         >
