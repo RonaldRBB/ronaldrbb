@@ -5,17 +5,24 @@ import Header from './header';
 import Aside from './aside';
 import Main from './main';
 import CV from '../interfaces/cv';
-class App extends React.Component<{}, { cv: CV | null }> {
+class App extends React.Component<{}, { lang: string, buttonContent: string, cv_filename: string, cv: CV | null }> {
     constructor(props: any) {
         super(props);
         this.state = {
+            lang: "es",
+            buttonContent: "CV en Español",
+            cv_filename: "cv_es.json",
             cv: null
         };
+        this.toggleLanguage = this.toggleLanguage.bind(this);
     }
     componentDidMount() {
+        this.getJsonData();
+    }
+    getJsonData() {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${process.env.PUBLIC_URL}/cv_es.json`);
+                const response = await fetch(`${process.env.PUBLIC_URL}/${this.state.cv_filename}`);
                 const jobsData = await response.json();
                 this.setState({ cv: jobsData });
             } catch (error) {
@@ -26,18 +33,40 @@ class App extends React.Component<{}, { cv: CV | null }> {
         fetchData();
         // }, 5000);
     }
+    toggleLanguage() {
+        if (this.state.lang === "es") {
+            this.setState({
+                lang: "en",
+                buttonContent: "CV in english",
+                cv_filename: "cv_en.json"
+            });
+        } else {
+            this.setState({
+                lang: "es",
+                buttonContent: "CV en Español",
+                cv_filename: "cv_es.json"
+            });
+        }
+        this.getJsonData();
+    }
     render() {
         const { cv } = this.state;
         if (!cv) {
             return <div>Loading...</div>;
         }
+
         return (
             <section className="section has-background-link-light">
                 <div className="container ">
                     <div className="columns is-centered">
                         <div className="column box has-background-white is-8 p-6">
                             <div style={{ textAlign: "center" }}>
-                                <a href="cv_eng.html" className="button is-link is-inverted is-size-7">CV in english</a>
+                                <button
+                                    className="button is-link is-inverted is-size-7"
+                                    onClick={this.toggleLanguage}
+                                >
+                                    {this.state.buttonContent}
+                                </button>
                             </div>
                             <Header name={cv.name} title={cv.title} />
                             <div className="columns">
