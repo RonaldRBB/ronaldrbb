@@ -1,5 +1,5 @@
 import React from "react";
-class Job extends React.Component {
+class Experiences extends React.Component {
     render() {
         return (
             <div className="ml-4">
@@ -95,4 +95,4 @@ class Job extends React.Component {
         )
     }
 }
-export default Job
+export default Experiences

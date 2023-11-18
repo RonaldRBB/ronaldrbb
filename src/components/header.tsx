@@ -1,8 +1,5 @@
 import React from "react";
 class Header extends React.Component<{ name: string, title: string }> {
-    // constructor(props: { name: string, title: string }) {
-    //     super(props);
-    // }
     render() {
         return (
             <div className="columns is-vcentered">
