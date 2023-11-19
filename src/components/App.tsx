@@ -1,5 +1,6 @@
 // import bulma
 import 'bulma/css/bulma.min.css';
+import 'bulma-extensions/dist/css/bulma-extensions.min.css';
 import React from 'react';
 import Header from './header';
 import Aside from './aside';
@@ -52,43 +53,46 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
     render() {
         const { cv } = this.state;
         if (!cv) {
-            return <div>Loading...</div>;
+            return <div className="pageloader is-active"><span className="title">Loading</span></div>;
         }
         return (
-            <section className="section has-background-link-light">
-                <div className="container">
-                    <div className="columns is-centered">
-                        <div className="column box has-background-white is-8 p-6">
-                            <div style={{ textAlign: "center" }}>
-                                <button
-                                    className="button is-link is-inverted is-size-7"
-                                    onClick={this.toggleLanguage}
-                                >
-                                    {this.state.buttonContent}
-                                </button>
-                            </div>
-                            <Header name={cv.name} title={cv.title} />
-                            <div className="columns">
-                                <div className="column is-9">
-                                    <Main
-                                        aboutMe={cv.aboutMe}
-                                        experience={cv.experience}
-                                        education={cv.education}
-                                    />
+            <>
+                <div className="pageloader"><span className="title">Pageloader</span></div>
+                <section className="section has-background-link-light">
+                    <div className="container">
+                        <div className="columns is-centered">
+                            <div className="column box has-background-white is-8 p-6">
+                                <div style={{ textAlign: "center" }}>
+                                    <button
+                                        className="button is-link is-inverted is-size-7"
+                                        onClick={this.toggleLanguage}
+                                    >
+                                        {this.state.buttonContent}
+                                    </button>
                                 </div>
-                                <div className="column">
-                                    <Aside
-                                        details={cv.details}
-                                        links={cv.links}
-                                        languages={cv.languages}
-                                        DownloadCvs={cv.downloadCV}
-                                    />
+                                <Header name={cv.name} title={cv.title} />
+                                <div className="columns">
+                                    <div className="column is-9">
+                                        <Main
+                                            aboutMe={cv.aboutMe}
+                                            experience={cv.experience}
+                                            education={cv.education}
+                                        />
+                                    </div>
+                                    <div className="column">
+                                        <Aside
+                                            details={cv.details}
+                                            links={cv.links}
+                                            languages={cv.languages}
+                                            DownloadCvs={cv.downloadCV}
+                                        />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
+                </section>
+            </>
         );
     }
 }
