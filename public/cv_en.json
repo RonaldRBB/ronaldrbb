@@ -205,13 +205,13 @@
         }
     ],
     "education": {
-        "universityEducation": [
+        "university": [
             {
-                "name": "Systems Engineering",
-                "university": "Instituto Politécnico Santiago Mariño"
+                "title": "Systems Engineering",
+                "name": "Instituto Politécnico Santiago Mariño"
             }
         ],
-        "additionalCourses": [
+        "courses": [
             {
                 "name": "Secure Development",
                 "institution": "Educacion IT",
