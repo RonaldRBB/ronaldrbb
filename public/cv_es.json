@@ -34,13 +34,14 @@
     "experience": [
         {
             "position": "Desarrollador Backend",
-            "company": "Cobro Digital S.R.L., Argentina",
+            "company": "Cobro Digital S.R.L.",
+            "location": "Argentina",
             "period": "Enero 2022 - Actualidad",
             "companyDescription": "Cobro Digital ofrece soluciones personalizadas de cobranza, recaudación y pagos, con certificación PCI para transacciones seguras con tarjetas de crédito y débito.",
             "projects": [
                 "Creación de una API microservicio antifraude para reducir la probabilidad de fraude en pagos con tarjeta de crédito.",
                 "Desarrollo de una integración con Débitos Automáticos de Payway para introducir un producto de cobro por suscripción y cumplir con normativas PCI.",
-                "Desarrollo de una integración con <a href='https://risk.lexisnexis.com/products/threatmetrix'>ThreatMetrix</a> para mejorar la prevención de fraude.",
+                "Desarrollo de una integración con ThreatMetrix para mejorar la prevención de fraude.",
                 "Refactorización del código core del sistema para cumplir con regulaciones PCI y proteger datos de clientes.",
                 "Refactorización del código core del sistema y mejora del 90% en el tiempo de respuesta de consultas de operaciones con tarjetas."
             ],
@@ -71,12 +72,13 @@
         },
         {
             "position": "Desarrollador Full Stack",
-            "company": "Datasocial SL, España",
+            "company": "Datasocial SL",
+            "location": "España",
             "period": "Febrero 2021 - Mayo 2021",
             "companyDescription": "Agencia especializada en HubSpot, líder en soluciones integrales de ventas, marketing y servicio al cliente.",
             "projects": [
                 [
-                    "Integración de servicios API de <a href='https://www.hubspot.es/'>Hubspot</a> y <a href='https://dialogagroup.com/es/'>Dialoga España</a> para facilitar llamadas a contactos desde el sitio web de HubSpot."
+                    "Integración de servicios API de Hubspot y Dialoga España para facilitar llamadas a contactos desde el sitio web de HubSpot."
                 ]
             ],
             "technologies": {
@@ -101,13 +103,14 @@
         },
         {
             "position": "Desarrollador Full Stack",
-            "company": "Hotel Wyndham Concorde, Venezuela",
+            "company": "Hotel Wyndham Concorde",
+            "location": "Venezuela",
             "period": "Mayo 2019 - Febrero 2021",
             "companyDescription": "Lideré proyectos innovadores en el lujoso resort 5 estrellas Wyndham Concorde Isla Margarita.",
             "projects": [
                 "Desarrollo del sistema \"Club Concorde\" para gestionar membresías, mantener la operación durante la pandemia y generar informes de ventas.",
                 "Desarrollo de Lector de código QR para tarjetas de membresías del Club Concorde, asegurando el control de acceso durante la pandemia de COVID-19.",
-                "Creación de un chatbot mediante la API de <a href='https://www.twilio.com/'>Twilio</a> para facilitar reservas y servicios del hotel.",
+                "Creación de un chatbot mediante la API de Twilio para facilitar reservas y servicios del hotel.",
                 "Desarrollo de sistema de códigos QR en brazaletes para eventos \"Reserva Fiestas\", reduciendo los tiempos de espera de los clientes.",
                 "Desarrollo de una herramienta de email marketing para captar y fidelizar clientes mediante envíos masivos de correos electrónicos.",
                 "Creación del plugin WordPress \"Reserva Fiestas\" para la venta de boletos en línea, agilizando el proceso de venta de boletería para eventos."
@@ -143,7 +146,8 @@
         },
         {
             "position": "Desarrollador Full Stack",
-            "company": "Hotel Margarita Real - Venezuela",
+            "company": "Hotel Margarita Real",
+            "location": "Venezuela",
             "period": "Septiembre 2016 - Mayo 2019",
             "companyDescription": "Desarrollé proyectos para mejorar la operatividad del hotel y la experiencia de los huéspedes.",
             "projects": [
@@ -175,7 +179,8 @@
         },
         {
             "position": "Desarrollador Full Stack",
-            "company": "Voltium, C.A - Venezuela",
+            "company": "Voltium, C.A.",
+            "location": "Venezuela",
             "period": "Septiembre 2012 - Mayo 2016",
             "companyDescription": "",
             "projects": [

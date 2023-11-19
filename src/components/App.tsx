@@ -54,7 +54,6 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
         if (!cv) {
             return <div>Loading...</div>;
         }
-
         return (
             <section className="section has-background-link-light">
                 <div className="container">
@@ -71,7 +70,7 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
                             <Header name={cv.name} title={cv.title} />
                             <div className="columns">
                                 <div className="column is-9">
-                                    <Main aboutMe={cv.aboutMe} />
+                                    <Main aboutMe={cv.aboutMe} experience={cv.experience} />
                                 </div>
                                 <div className="column">
                                     <Aside
