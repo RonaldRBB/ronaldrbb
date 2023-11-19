@@ -17,6 +17,7 @@ interface AsideStateInt {
     detailsTitle: string
     linksTitle: string
     languagesTitle: string
+    downloadCV: string
 }
 class Aside extends React.Component<AsidePropsInt, AsideStateInt> {
     titles: Record<string, { details: string; links: string; languages: string, downloadCV: string }> = {
@@ -39,6 +40,7 @@ class Aside extends React.Component<AsidePropsInt, AsideStateInt> {
             detailsTitle: this.titles[this.props.lang].details,
             linksTitle: this.titles[this.props.lang].links,
             languagesTitle: this.titles[this.props.lang].languages,
+            downloadCV: this.titles[this.props.lang].downloadCV
         };
     }
     componentDidUpdate(prevProps: Readonly<AsidePropsInt>): void {
@@ -51,6 +53,7 @@ class Aside extends React.Component<AsidePropsInt, AsideStateInt> {
             detailsTitle: this.titles[this.props.lang].details,
             linksTitle: this.titles[this.props.lang].links,
             languagesTitle: this.titles[this.props.lang].languages,
+            downloadCV: this.titles[this.props.lang].downloadCV
         });
     }
 
@@ -69,7 +72,7 @@ class Aside extends React.Component<AsidePropsInt, AsideStateInt> {
                 <ul style={{ listStyle: "none" }}>
                     <Languages languages={this.props.languages} />
                 </ul>
-                <h2 className="title is-5">Descargar CV</h2>
+                <h2 className="title is-5">{this.state.downloadCV}</h2>
                 <ul style={{ listStyle: "none" }}>
                     <Buttons DownloadCvs={this.props.DownloadCvs} />
                 </ul>
