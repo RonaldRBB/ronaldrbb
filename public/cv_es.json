@@ -207,13 +207,13 @@
         }
     ],
     "education": {
-        "universityEducation": [
+        "university": [
             {
-                "name": "Ingeniería de Sistemas",
-                "university": "Instituto Politécnico Santiago Mariño"
+                "title": "Ingeniería de Sistemas",
+                "name": "Instituto Politécnico Santiago Mariño"
             }
         ],
-        "additionalCourses": [
+        "courses": [
             {
                 "name": "Desarrollo Seguro",
                 "institution": "Educacion IT",

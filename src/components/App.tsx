@@ -70,7 +70,11 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
                             <Header name={cv.name} title={cv.title} />
                             <div className="columns">
                                 <div className="column is-9">
-                                    <Main aboutMe={cv.aboutMe} experience={cv.experience} />
+                                    <Main
+                                        aboutMe={cv.aboutMe}
+                                        experience={cv.experience}
+                                        education={cv.education}
+                                    />
                                 </div>
                                 <div className="column">
                                     <Aside

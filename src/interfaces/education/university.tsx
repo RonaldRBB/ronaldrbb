@@ -1,5 +1,5 @@
 interface University {
+    title: string;
     name: string;
-    university: string;
 }
 export default University
