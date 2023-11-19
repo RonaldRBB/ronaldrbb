@@ -57,7 +57,7 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
         }
         return (
             <>
-                <div className="pageloader"><span className="title">Pageloader</span></div>
+                <div className="pageloader"><span className="title">Loading</span></div>
                 <section className="section has-background-link-light">
                     <div className="container">
                         <div className="columns is-centered">
