@@ -81,6 +81,7 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
                                     </div>
                                     <div className="column">
                                         <Aside
+                                            lang={this.state.lang}
                                             details={cv.details}
                                             links={cv.links}
                                             languages={cv.languages}
