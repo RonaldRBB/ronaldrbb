@@ -1,13 +1,13 @@
 // import bulma
 import 'bulma/css/bulma.min.css';
 import 'bulma-extensions/dist/css/bulma-extensions.min.css';
+import { CvService } from '../services/';
 import React from 'react';
 import Header from './header';
 import Aside from './aside';
 import Main from './main';
-import CV from '../interfaces/cv';
-import { CvService } from '../services/';
-class App extends React.Component<{}, { lang: string, buttonContent: string, cv_filename: string, cv: CV | null }> {
+import AppInterface from '../interfaces/components/App';
+class App extends React.Component<{}, AppInterface> {
     constructor(props: any) {
         super(props);
         this.state = {
@@ -18,12 +18,12 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
         };
         this.toggleLanguage = this.toggleLanguage.bind(this);
     }
-    componentDidMount() {
+    override componentDidMount() {
         setTimeout(() => {
             this.getJsonData();
         }, 500);
     }
-    componentDidUpdate(prevState: Readonly<{ lang: string; }>): void {
+    override componentDidUpdate(prevState: Readonly<{ lang: string; }>) {
         if (prevState.lang !== this.state.lang) {
             this.getJsonData();
         }
@@ -51,7 +51,7 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
             });
         }
     }
-    render() {
+    override render() {
         const { cv } = this.state;
         if (!cv) {
             return <div className="pageloader is-active"><span className="title">Loading</span></div>;
@@ -82,7 +82,7 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
                                     </div>
                                     <div className="column">
                                         <Aside
-                                            lang={this.state.lang}
+                                            language={this.state.lang}
                                             details={cv.details}
                                             links={cv.links}
                                             languages={cv.languages}

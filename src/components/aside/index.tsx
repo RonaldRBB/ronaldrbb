@@ -1,26 +1,13 @@
 import Buttons from "./buttons";
 import Details from "./details";
-import Languages from "./languajes";
+import Language from "./languajes";
 import Links from "./links";
 import React from "react";
-import DetailsInt from "../../interfaces/cv/details";
-import Link from "../../interfaces/cv/links";
-import DownloadCV from "../../interfaces/cv/download";
-interface AsidePropsInt {
-    lang: string
-    details: DetailsInt
-    links: Link[]
-    languages: string[]
-    DownloadCvs: DownloadCV[]
-}
-interface AsideStateInt {
-    detailsTitle: string
-    linksTitle: string
-    languagesTitle: string
-    downloadCV: string
-}
-class Aside extends React.Component<AsidePropsInt, AsideStateInt> {
-    titles: Record<string, { details: string; links: string; languages: string, downloadCV: string }> = {
+import { Language as LanguageType } from "../../types";
+import { Titles } from "../../types";
+import { Props, State } from "../../interfaces/components/aside";
+class Aside extends React.Component<Props, State> {
+    titles: Titles = {
         es: {
             details: "Detalles",
             links: "Links",
@@ -34,30 +21,32 @@ class Aside extends React.Component<AsidePropsInt, AsideStateInt> {
             downloadCV: "Download CV",
         },
     };
-    constructor(props: AsidePropsInt) {
+    constructor(props: Props) {
         super(props);
+        const language: LanguageType = this.props.language;
         this.state = {
-            detailsTitle: this.titles[this.props.lang].details,
-            linksTitle: this.titles[this.props.lang].links,
-            languagesTitle: this.titles[this.props.lang].languages,
-            downloadCV: this.titles[this.props.lang].downloadCV
+            detailsTitle: this.titles[language].details,
+            linksTitle: this.titles[language].links,
+            languagesTitle: this.titles[language].languages,
+            downloadCV: this.titles[language].downloadCV
         };
     }
-    componentDidUpdate(prevProps: Readonly<AsidePropsInt>): void {
-        if (prevProps.lang !== this.props.lang) {
+    override componentDidUpdate(prevProps: Readonly<Props>): void {
+        if (prevProps.language !== this.props.language) {
             this.toggleLanguage();
         }
     }
     toggleLanguage() {
+        const lang: LanguageType = this.props.language;
         this.setState({
-            detailsTitle: this.titles[this.props.lang].details,
-            linksTitle: this.titles[this.props.lang].links,
-            languagesTitle: this.titles[this.props.lang].languages,
-            downloadCV: this.titles[this.props.lang].downloadCV
+            detailsTitle: this.titles[lang].details,
+            linksTitle: this.titles[lang].links,
+            languagesTitle: this.titles[lang].languages,
+            downloadCV: this.titles[lang].downloadCV
         });
     }
 
-    render() {
+    override render() {
         return (
             <div className="content">
                 <h2 className="title is-5">{this.state.detailsTitle}</h2>
@@ -70,7 +59,7 @@ class Aside extends React.Component<AsidePropsInt, AsideStateInt> {
                 </ul>
                 <h2 className="title is-5">{this.state.languagesTitle}</h2>
                 <ul style={{ listStyle: "none" }}>
-                    <Languages languages={this.props.languages} />
+                    <Language languages={this.props.languages} />
                 </ul>
                 <h2 className="title is-5">{this.state.downloadCV}</h2>
                 <ul style={{ listStyle: "none" }}>

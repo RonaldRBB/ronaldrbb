@@ -1,7 +1,7 @@
 import React from "react";
 import DetailsInt from "../../interfaces/cv/details";
 class Details extends React.Component<{ details: DetailsInt }> {
-    render() {
+    override render() {
         return (
             <>
                 <li>{this.props.details.location}</li>
