@@ -1,11 +1,11 @@
 import React from "react";
 class Header extends React.Component<{ name: string, title: string }> {
-    render() {
+    override render() {
         return (
             <div className="columns is-vcentered">
                 <div className="column is-3">
                     <figure className="image is-128x128">
-                        <img className="is-rounded" src={process.env.PUBLIC_URL + '/profile.jpeg'} alt="Ronald Bello" />
+                        <img className="is-rounded" src={(process.env as any).PUBLIC_URL + '/profile.jpeg'} alt="Ronald Bello" />
                     </figure>
                 </div>
                 <div className="column">

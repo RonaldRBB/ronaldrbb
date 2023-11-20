@@ -5,7 +5,7 @@ import ExperienceInt from "../../interfaces/cv/experience";
 import EducationInt from "../../interfaces/cv/education";
 import Education from "../education";
 class Main extends React.Component<{ aboutMe: string, experience: ExperienceInt[], education: EducationInt }>{
-    render() {
+    override render() {
         return (
             <div className="content" >
                 <h2 className="title is-4">• Sobre mí</h2>

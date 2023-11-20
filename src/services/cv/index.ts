@@ -1,7 +1,7 @@
 class cv {
     static async getJsonData(filename: string) {
         try {
-            const response = await fetch(`${process.env.PUBLIC_URL}/${filename}`);
+            const response = await fetch(`${(process.env as any).PUBLIC_URL}/${filename}`);
             const jsonData = await response.json();
             return jsonData;
         } catch (error) {
