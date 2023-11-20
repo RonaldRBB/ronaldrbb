@@ -6,33 +6,35 @@ import Header from './header';
 import Aside from './aside';
 import Main from './main';
 import CV from '../interfaces/cv';
+import { CvService } from '../services/';
 class App extends React.Component<{}, { lang: string, buttonContent: string, cv_filename: string, cv: CV | null }> {
     constructor(props: any) {
         super(props);
         this.state = {
             lang: "es",
-            buttonContent: "CV en Español",
             cv_filename: "cv_es.json",
+            buttonContent: "CV in english",
             cv: null
         };
         this.toggleLanguage = this.toggleLanguage.bind(this);
     }
     componentDidMount() {
-        this.getJsonData();
+        setTimeout(() => {
+            this.getJsonData();
+        }, 500);
     }
-    getJsonData() {
-        const fetchData = async () => {
-            try {
-                const response = await fetch(`${process.env.PUBLIC_URL}/${this.state.cv_filename}`);
-                const jobsData = await response.json();
-                this.setState({ cv: jobsData });
-            } catch (error) {
-                console.error('Error fetching jobs data:', error);
-            }
-        };
-        // setTimeout(() => {
-        fetchData();
-        // }, 5000);
+    componentDidUpdate(prevState: Readonly<{ lang: string; }>): void {
+        if (prevState.lang !== this.state.lang) {
+            this.getJsonData();
+        }
+    }
+    async getJsonData() {
+        try {
+            const jsonData = await CvService.getJsonData(this.state.cv_filename);
+            this.setState({ cv: jsonData });
+        } catch (error) {
+            console.error('Error handling JSON data:', error);
+        }
     }
     toggleLanguage() {
         if (this.state.lang === "es") {
@@ -44,11 +46,10 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
         } else {
             this.setState({
                 lang: "es",
-                buttonContent: "CV en Español",
+                buttonContent: "CV en ingleés",
                 cv_filename: "cv_es.json"
             });
         }
-        this.getJsonData();
     }
     render() {
         const { cv } = this.state;
@@ -97,5 +98,4 @@ class App extends React.Component<{}, { lang: string, buttonContent: string, cv_
         );
     }
 }
-
 export default App;

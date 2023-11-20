@@ -2,10 +2,7 @@ import React from "react";
 import DetailsInt from "../interfaces/details";
 import Link from "../interfaces/link";
 import DownloadCV from "../interfaces/download_cv";
-import Details from "./aside/details";
-import Languages from "./aside/languajes";
-import Links from "./aside/links";
-import Buttons from "./aside/buttons";
+import { Details, Languages, Links, Buttons } from "./aside/";
 interface AsidePropsInt {
     lang: string
     details: DetailsInt
