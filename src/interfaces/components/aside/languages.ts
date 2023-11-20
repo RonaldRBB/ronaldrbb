@@ -1,3 +1,3 @@
-export default interface Languages {
+export default interface Props {
     languages: String[]
 }

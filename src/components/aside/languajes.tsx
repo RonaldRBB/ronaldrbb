@@ -1,6 +1,6 @@
 import React from "react";
-import LanguagesInterface from "../../interfaces/components/aside/languages";
-export default class Languages extends React.Component<LanguagesInterface> {
+import Props from "@interfaces/components/aside/languages";
+export default class Languages extends React.Component<Props> {
     override render() {
         return (
             <>

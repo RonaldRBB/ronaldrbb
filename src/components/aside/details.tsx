@@ -1,5 +1,5 @@
 import React from "react";
-import Props from "../../interfaces/components/aside/details";
+import Props from "@interfaces/components/aside/details";
 export default class Details extends React.Component<Props> {
     override render() {
         return (
