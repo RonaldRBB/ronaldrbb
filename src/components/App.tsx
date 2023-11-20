@@ -5,7 +5,7 @@ import React from 'react';
 import Header from './header';
 import Aside from './aside';
 import Main from './main';
-import CV from '../interfaces/cv/cv';
+import CV from '../interfaces/cv';
 import { CvService } from '../services/';
 class App extends React.Component<{}, { lang: string, buttonContent: string, cv_filename: string, cv: CV | null }> {
     constructor(props: any) {
