@@ -1,6 +1,6 @@
 import React from "react";
 import Technology from "../../interfaces/cv/experience/technology";
-class TechStack extends React.Component<{ technologies: Technology }> {
+export default class TechStack extends React.Component<{ technologies: Technology }> {
     override render() {
         return (
             <>
@@ -35,4 +35,3 @@ class TechStack extends React.Component<{ technologies: Technology }> {
         );
     }
 }
-export default TechStack

@@ -1,7 +1,6 @@
 import React from "react";
-import DownloadCV from "../../interfaces/cv/download";
-
-class Buttons extends React.Component<{ DownloadCvs: DownloadCV[] }> {
+import Props from "../../interfaces/components/aside/buttons";
+export default class Buttons extends React.Component<Props> {
     renderButtons(): JSX.Element[] | null {
         console.log(this.props.DownloadCvs)
         return this.props.DownloadCvs.map((pdf) => (
@@ -21,4 +20,3 @@ class Buttons extends React.Component<{ DownloadCvs: DownloadCV[] }> {
         )
     }
 }
-export default Buttons

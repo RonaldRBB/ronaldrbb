@@ -1,5 +1,6 @@
 import React from "react";
-class Languages extends React.Component<{ languages: String[] }> {
+import LanguagesInterface from "../../interfaces/components/aside/languages";
+export default class Languages extends React.Component<LanguagesInterface> {
     override render() {
         return (
             <>
@@ -10,4 +11,3 @@ class Languages extends React.Component<{ languages: String[] }> {
         )
     }
 }
-export default Languages

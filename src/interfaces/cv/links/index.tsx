@@ -1,6 +1,4 @@
-
-interface Link {
+export default interface Link {
     name: string;
     value: string;
 }
-export default Link

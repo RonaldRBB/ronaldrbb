@@ -1,5 +1,5 @@
 import React from "react";
-class Header extends React.Component<{ name: string, title: string }> {
+export default class Header extends React.Component<{ name: string, title: string }> {
     override render() {
         return (
             <div className="columns is-vcentered">
@@ -16,5 +16,3 @@ class Header extends React.Component<{ name: string, title: string }> {
         )
     }
 }
-
-export default Header

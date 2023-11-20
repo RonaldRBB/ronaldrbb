@@ -1,6 +1,6 @@
 import React from "react";
 import Experience from "../../interfaces/cv/experience";
-class Header extends React.Component<{ experience: Experience }> {
+export default class Header extends React.Component<{ experience: Experience }> {
     override render() {
         return (
             <>
@@ -15,4 +15,3 @@ class Header extends React.Component<{ experience: Experience }> {
         );
     }
 }
-export default Header;

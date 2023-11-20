@@ -1,5 +1,5 @@
 import React from "react";
-class Projects extends React.Component<{ projects: String[] }> {
+export default class Projects extends React.Component<{ projects: String[] }> {
     override render() {
         return (
             <>
@@ -13,4 +13,3 @@ class Projects extends React.Component<{ projects: String[] }> {
         );
     }
 }
-export default Projects

@@ -7,7 +7,7 @@ import Header from './header';
 import Aside from './aside';
 import Main from './main';
 import AppInterface from '../interfaces/components/App';
-class App extends React.Component<{}, AppInterface> {
+export default class App extends React.Component<{}, AppInterface> {
     constructor(props: any) {
         super(props);
         this.state = {
@@ -98,4 +98,3 @@ class App extends React.Component<{}, AppInterface> {
         );
     }
 }
-export default App;

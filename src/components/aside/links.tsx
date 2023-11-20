@@ -1,6 +1,6 @@
 import React from "react";
 import LinkInt from "../../interfaces/cv/links";
-class Links extends React.Component<{ links: LinkInt[] }> {
+export default class Links extends React.Component<{ links: LinkInt[] }> {
     override render() {
         return (
             <>
@@ -15,4 +15,3 @@ class Links extends React.Component<{ links: LinkInt[] }> {
         )
     }
 }
-export default Links

@@ -1,6 +1,6 @@
 import React from "react";
-import DetailsInt from "../../interfaces/cv/details";
-class Details extends React.Component<{ details: DetailsInt }> {
+import Props from "../../interfaces/components/aside/details";
+export default class Details extends React.Component<Props> {
     override render() {
         return (
             <>
@@ -15,4 +15,3 @@ class Details extends React.Component<{ details: DetailsInt }> {
         )
     }
 }
-export default Details

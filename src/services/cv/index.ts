@@ -1,4 +1,4 @@
-class cv {
+export default class cv {
     static async getJsonData(filename: string) {
         try {
             const response = await fetch(`${(process.env as any).PUBLIC_URL}/${filename}`);
@@ -10,5 +10,3 @@ class cv {
         }
     }
 }
-
-export default cv;

@@ -1,5 +1,5 @@
 import Technology from "./technology";
-interface Experience {
+export default interface Experience {
     position: string;
     company: string;
     location: string;
@@ -8,4 +8,3 @@ interface Experience {
     projects: String[];
     technologies: Technology;
 }
-export default Experience

@@ -6,7 +6,7 @@ import React from "react";
 import { Language as LanguageType } from "../../types";
 import { Titles } from "../../types";
 import { Props, State } from "../../interfaces/components/aside";
-class Aside extends React.Component<Props, State> {
+export default class Aside extends React.Component<Props, State> {
     titles: Titles = {
         es: {
             details: "Detalles",
@@ -45,7 +45,6 @@ class Aside extends React.Component<Props, State> {
             downloadCV: this.titles[lang].downloadCV
         });
     }
-
     override render() {
         return (
             <div className="content">
@@ -69,4 +68,3 @@ class Aside extends React.Component<Props, State> {
         )
     }
 }
-export default Aside

@@ -3,7 +3,7 @@ import Link from "./links";
 import DownloadCV from "./download";
 import Experience from "./experience";
 import Education from "./education";
-interface CV {
+export default interface CV {
     name: string;
     title: string;
     aboutMe: string;
@@ -14,4 +14,3 @@ interface CV {
     experience: Experience[];
     education: Education;
 }
-export default CV;

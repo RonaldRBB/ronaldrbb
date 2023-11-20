@@ -1,6 +1,6 @@
 import React from "react";
 import UniversityInt from "../../interfaces/cv/education/university";
-class University extends React.Component<{ university: UniversityInt[] }> {
+export default class University extends React.Component<{ university: UniversityInt[] }> {
     renderUniversity() {
         return this.props.university.map((university, index) => {
             return (
@@ -30,4 +30,3 @@ class University extends React.Component<{ university: UniversityInt[] }> {
         )
     }
 }
-export default University
