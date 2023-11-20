@@ -1,5 +1,5 @@
 import React from "react";
-import LinkInt from "../../interfaces/cv/link";
+import LinkInt from "../../interfaces/cv/links";
 class Links extends React.Component<{ links: LinkInt[] }> {
     render() {
         return (

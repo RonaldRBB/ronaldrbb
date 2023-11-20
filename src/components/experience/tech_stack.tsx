@@ -1,5 +1,5 @@
 import React from "react";
-import { Technology } from "../../interfaces/cv/experiences";
+import  Technology from "../../interfaces/cv/experience/technology";
 class TechStack extends React.Component<{ technologies: Technology }> {
     render() {
         return (

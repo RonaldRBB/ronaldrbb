@@ -1,6 +1,6 @@
 import Details from "./details";
-import Link from "./link";
-import DownloadCV from "./download_cv";
+import Link from "./links";
+import DownloadCV from "./download";
 import Experience from "./experience";
 import Education from "./education";
 interface CV {

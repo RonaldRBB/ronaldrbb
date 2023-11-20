@@ -1,5 +1,5 @@
 import React from "react";
-import DownloadCV from "../../interfaces/cv/download_cv";
+import DownloadCV from "../../interfaces/cv/download";
 
 class Buttons extends React.Component<{ DownloadCvs: DownloadCV[] }> {
     renderButtons(): JSX.Element[] | null {

@@ -1,5 +1,4 @@
-import { Technology } from "./experiences";
-
+import Technology from "./technology";
 interface Experience {
     position: string;
     company: string;

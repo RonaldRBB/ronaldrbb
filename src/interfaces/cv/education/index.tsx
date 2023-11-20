@@ -1,3 +1,7 @@
-import Course from "./course";
 import University from "./university";
-export type { Course, University }
+import Course from "./course";
+interface Education {
+    university: University[];
+    courses: Course[];
+}
+export default Education

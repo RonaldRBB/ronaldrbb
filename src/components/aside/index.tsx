@@ -4,8 +4,8 @@ import Languages from "./languajes";
 import Links from "./links";
 import React from "react";
 import DetailsInt from "../../interfaces/cv/details";
-import Link from "../../interfaces/cv/link";
-import DownloadCV from "../../interfaces/cv/download_cv";
+import Link from "../../interfaces/cv/links";
+import DownloadCV from "../../interfaces/cv/download";
 interface AsidePropsInt {
     lang: string
     details: DetailsInt
