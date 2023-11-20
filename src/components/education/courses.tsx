@@ -11,7 +11,7 @@ class Courses extends React.Component<{ courses: CoursesInt[] }> {
             )
         })
     }
-    render() {
+    override render() {
         return (
             <>
                 <h3 className="title is-5">Formación Complementaria</h3>

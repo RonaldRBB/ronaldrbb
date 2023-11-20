@@ -11,7 +11,7 @@ class University extends React.Component<{ university: UniversityInt[] }> {
             )
         })
     }
-    render() {
+    override render() {
         return (
             <>
                 <h3 className="title is-5">Formacion Universitaria</h3>

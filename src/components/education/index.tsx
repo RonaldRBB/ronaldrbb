@@ -3,7 +3,7 @@ import University from "./university";
 import EducationInt from "../../interfaces/cv/education";
 import Courses from "./courses";
 class Education extends React.Component<{ education: EducationInt }> {
-    render() {
+    override render() {
         return (
             <div className="ml-4">
                 <University university={this.props.education.university} />
