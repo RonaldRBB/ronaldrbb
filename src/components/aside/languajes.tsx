@@ -1,6 +1,6 @@
 import React from "react";
 class Languages extends React.Component<{ languages: String[] }> {
-    render() {
+    override render() {
         return (
             <>
                 {this.props.languages.map((language, index) => (

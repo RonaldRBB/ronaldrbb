@@ -1,7 +1,7 @@
 import React from "react";
 import LinkInt from "../../interfaces/cv/links";
 class Links extends React.Component<{ links: LinkInt[] }> {
-    render() {
+    override render() {
         return (
             <>
                 {this.props.links.map((link) => (
