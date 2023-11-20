@@ -1,11 +1,11 @@
 import 'bulma/css/bulma.min.css';
 import 'bulma-extensions/dist/css/bulma-extensions.min.css';
-import { CvService } from '../services/';
+import Cv from '../services/cv';
 import React from 'react';
 import Header from './header';
 import Aside from './aside';
 import Main from './main';
-import AppInterface from '@interfaces/components/App';
+import AppInterface from '../interfaces/components/App';
 export default class App extends React.Component<{}, AppInterface> {
     constructor(props: any) {
         super(props);
@@ -29,7 +29,7 @@ export default class App extends React.Component<{}, AppInterface> {
     }
     async getJsonData() {
         try {
-            const jsonData = await CvService.getJsonData(this.state.cv_filename);
+            const jsonData = await Cv.getJsonData(this.state.cv_filename);
             this.setState({ cv: jsonData });
         } catch (error) {
             console.error('Error handling JSON data:', error);

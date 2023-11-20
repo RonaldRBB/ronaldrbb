@@ -1,5 +1,5 @@
 import React from "react";
-import UniversityInt from "@interfaces/cv/education/university";
+import UniversityInt from "../../interfaces/cv/education/university";
 export default class University extends React.Component<{ university: UniversityInt[] }> {
     renderUniversity() {
         return this.props.university.map((university, index) => {

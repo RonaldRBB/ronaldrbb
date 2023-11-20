@@ -1,10 +1,10 @@
+import React from "react";
 import Buttons from "./buttons";
 import Details from "./details";
 import Language from "./languajes";
 import Links from "./links";
-import React from "react";
-import { Language as LanguageType, Titles } from "@customTypes/";
-import { Props, State } from "@interfaces/components/aside";
+import { Language as LanguageType, Titles } from "../../types";
+import { Props, State } from "../../interfaces/components/aside";
 export default class Aside extends React.Component<Props, State> {
     titles: Titles = {
         es: {

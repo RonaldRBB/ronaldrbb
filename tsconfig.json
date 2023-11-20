@@ -2,10 +2,6 @@
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "@components/*": ["components/","components/*"],
-      "@interfaces/*": ["interfaces/","interfaces/*"],
-      "@customServices/*": ["services/","services/*"],
-      "@customTypes/*": ["types/","types/*"]
     },
     "target": "ESNext",
     "lib": [
@@ -24,7 +20,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "noEmit": false,
     "jsx": "react-jsx",
     // Strict Checks de github
     "alwaysStrict": true,
@@ -57,7 +53,5 @@
     "suppressImplicitAnyIndexErrors": false,
     "noStrictGenericChecks": false
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src/**/*"],
 }

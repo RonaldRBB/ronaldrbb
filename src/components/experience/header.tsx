@@ -1,5 +1,5 @@
 import React from "react";
-import Experience from "@interfaces/cv/experience";
+import Experience from "../../interfaces/cv/experience";
 export default class Header extends React.Component<{ experience: Experience }> {
     override render() {
         return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Experience from "@interfaces/cv/experience";
+import Experience from "../../interfaces/cv/experience";
 import Header from "./header";
 import Projects from "./projects";
 import TechStack from "./tech_stack";

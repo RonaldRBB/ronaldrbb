@@ -1,6 +1,6 @@
 import React from "react";
-import LinkInt from "@interfaces/cv/links";
-export default class Links extends React.Component<{ links: LinkInt[] }> {
+import Props from "../../interfaces/components/aside/links";
+export default class Links extends React.Component<Props> {
     override render() {
         return (
             <>
