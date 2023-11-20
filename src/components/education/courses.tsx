@@ -1,5 +1,5 @@
 import React from "react";
-import CoursesInt from "../../interfaces/education/course";
+import CoursesInt from "../../interfaces/cv/education/course";
 class Courses extends React.Component<{ courses: CoursesInt[] }> {
     renderCourses() {
         return this.props.courses.map((course, index) => {

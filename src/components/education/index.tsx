@@ -1,6 +1,6 @@
 import React from "react";
 import University from "./university";
-import EducationInt from "../../interfaces/education";
+import EducationInt from "../../interfaces/cv/education";
 import Courses from "./courses";
 class Education extends React.Component<{ education: EducationInt }> {
     render() {

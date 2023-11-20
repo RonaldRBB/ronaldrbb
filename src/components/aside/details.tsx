@@ -1,5 +1,5 @@
 import React from "react";
-import DetailsInt from "../../interfaces/details";
+import DetailsInt from "../../interfaces/cv/details";
 class Details extends React.Component<{ details: DetailsInt }> {
     render() {
         return (

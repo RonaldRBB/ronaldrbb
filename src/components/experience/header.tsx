@@ -1,5 +1,5 @@
 import React from "react";
-import Experience from "../../interfaces/experience";
+import Experience from "../../interfaces/cv/experience";
 class Header extends React.Component<{ experience: Experience }> {
     render() {
         return (
