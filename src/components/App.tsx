@@ -5,7 +5,7 @@ import React from 'react';
 import Header from './header';
 import Aside from './aside';
 import Main from './main';
-import AppInterface from '../interfaces/components/App';
+import AppInterface from '@interfaces/components/App';
 export default class App extends React.Component<{}, AppInterface> {
     constructor(props: any) {
         super(props);

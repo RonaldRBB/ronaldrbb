@@ -1,6 +1,6 @@
-import Details from "../../../interfaces/cv/details";
-import Link from "../../../interfaces/cv/links";
-import DownloadCV from "../../../interfaces/cv/download";
+import Details from "@interfaces/cv/details";
+import Link from "@interfaces/cv/links";
+import DownloadCV from "@interfaces/cv/download";
 import { Language } from "../../../types";
 interface Props {
     language: Language
