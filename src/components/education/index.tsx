@@ -1,7 +1,7 @@
 import React from "react";
-import University from "./education/university";
-import EducationInt from "../interfaces/education";
-import Courses from "./education/courses";
+import University from "./university";
+import EducationInt from "../../interfaces/education";
+import Courses from "./courses";
 class Education extends React.Component<{ education: EducationInt }> {
     render() {
         return (

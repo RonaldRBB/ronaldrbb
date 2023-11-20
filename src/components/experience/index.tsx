@@ -1,8 +1,8 @@
 import React from "react";
-import Experience from "../interfaces/experience";
-import Header from "./experience/header";
-import Projects from "./experience/projects";
-import TechStack from "./experience/tech_stack";
+import Experience from "../../interfaces/experience";
+import Header from "./header";
+import Projects from "./projects";
+import TechStack from "./tech_stack";
 class Experiences extends React.Component<{ experience: Experience[] }> {
     render() {
         const renderExperience = this.props.experience.map((experience: Experience) => {
