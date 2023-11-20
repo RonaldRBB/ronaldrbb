@@ -1,6 +1,6 @@
 import React from "react";
 class Projects extends React.Component<{ projects: String[] }> {
-    render() {
+    override render() {
         return (
             <>
                 <p><em><strong>Proyectos:</strong></em></p>

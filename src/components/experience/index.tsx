@@ -4,7 +4,7 @@ import Header from "./header";
 import Projects from "./projects";
 import TechStack from "./tech_stack";
 class Experiences extends React.Component<{ experience: Experience[] }> {
-    render() {
+    override render() {
         const renderExperience = this.props.experience.map((experience: Experience) => {
             return (
                 <>

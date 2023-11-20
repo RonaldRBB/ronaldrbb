@@ -1,7 +1,7 @@
 import React from "react";
 import Experience from "../../interfaces/cv/experience";
 class Header extends React.Component<{ experience: Experience }> {
-    render() {
+    override render() {
         return (
             <>
                 <h3 className="title is-5">
