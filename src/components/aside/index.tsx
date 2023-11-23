@@ -1,8 +1,8 @@
 import React from "react";
-import Buttons from "./buttons";
-import Details from "./details";
-import Language from "./languajes";
-import Links from "./links";
+import Buttons from "components/aside/buttons";
+import Details from "components/aside/details";
+import Language from "components/aside/languajes";
+import Links from "components/aside/links";
 import { Language as LanguageType, Titles } from "types";
 import { Props, State } from "interfaces/components/aside";
 export default class Aside extends React.Component<Props, State> {

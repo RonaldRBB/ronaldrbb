@@ -2,9 +2,9 @@ import 'bulma/css/bulma.min.css';
 import 'bulma-extensions/dist/css/bulma-extensions.min.css';
 import Cv from 'services/cv';
 import React from 'react';
-import Header from './header';
-import Aside from './aside';
-import Main from './main';
+import Header from 'components/header';
+import Aside from 'components/aside';
+import Main from 'components/main';
 import AppInterface from 'interfaces/components/App';
 export default class App extends React.Component<{}, AppInterface> {
     constructor(props: any) {
