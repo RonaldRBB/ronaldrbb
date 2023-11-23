@@ -1,6 +1,6 @@
 import React from "react";
-import CoursesInt from "../../interfaces/cv/education/course";
-export default class Courses extends React.Component<{ courses: CoursesInt[] }> {
+import Props from "interfaces/components/education/courses";
+export default class Courses extends React.Component<Props> {
     renderCourses() {
         return this.props.courses.map((course, index) => {
             return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Props from "../../interfaces/components/aside/buttons";
+import Props from "interfaces/components/aside/buttons";
 export default class Buttons extends React.Component<Props> {
     renderButtons(): JSX.Element[] | null {
         console.log(this.props.DownloadCvs)

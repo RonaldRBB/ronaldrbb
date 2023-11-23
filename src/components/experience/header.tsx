@@ -1,6 +1,6 @@
 import React from "react";
-import Experience from "../../interfaces/cv/experience";
-export default class Header extends React.Component<{ experience: Experience }> {
+import Props from "interfaces/components/experience/Header";
+export default class Header extends React.Component<Props> {
     override render() {
         return (
             <>

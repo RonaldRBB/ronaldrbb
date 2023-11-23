@@ -1,5 +1,5 @@
-import CV from "../cv";
-import { Language } from "../../types";
+import CV from "interfaces/cv";
+import { Language } from "types";
 export default interface App {
     lang: Language
     buttonContent: string

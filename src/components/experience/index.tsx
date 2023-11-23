@@ -1,11 +1,11 @@
 import React from "react";
-import Experience from "../../interfaces/cv/experience";
+import Props from "interfaces/components/experience/index";
 import Header from "./header";
 import Projects from "./projects";
 import TechStack from "./tech_stack";
-export default class Experiences extends React.Component<{ experience: Experience[] }> {
+export default class Experiences extends React.Component<Props> {
     override render() {
-        const renderExperience = this.props.experience.map((experience: Experience) => {
+        const renderExperience = this.props.experience.map((experience) => {
             return (
                 <>
                     <Header experience={experience} />

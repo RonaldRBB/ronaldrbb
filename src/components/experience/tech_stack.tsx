@@ -1,5 +1,5 @@
 import React from "react";
-import Technology from "../../interfaces/cv/experience/technology";
+import Technology from "interfaces/cv/experience/technology";
 export default class TechStack extends React.Component<{ technologies: Technology }> {
     override render() {
         return (

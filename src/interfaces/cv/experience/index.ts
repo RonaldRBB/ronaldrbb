@@ -1,4 +1,4 @@
-import Technology from "../../cv/experience/technology";
+import Technology from "./technology";
 export default interface Experience {
     position: string;
     company: string;

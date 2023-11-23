@@ -1,9 +1,9 @@
 import React from "react";
-import Description from "../description";
-import Experience from "../experience";
-import ExperienceInt from "../../interfaces/cv/experience";
-import EducationInt from "../../interfaces/cv/education";
-import Education from "../education";
+import Description from "components/description";
+import Experience from "components/experience";
+import ExperienceInt from "interfaces/cv/experience";
+import EducationInt from "interfaces/cv/education";
+import Education from "components/education";
 class Main extends React.Component<{ aboutMe: string, experience: ExperienceInt[], education: EducationInt }>{
     override render() {
         return (

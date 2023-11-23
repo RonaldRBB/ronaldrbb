@@ -1,5 +1,5 @@
 import React from "react";
-import Props from "../../interfaces/components/aside/links";
+import Props from "interfaces/components/aside/links";
 export default class Links extends React.Component<Props> {
     override render() {
         return (
