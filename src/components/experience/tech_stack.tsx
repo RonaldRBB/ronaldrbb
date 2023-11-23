@@ -1,6 +1,6 @@
 import React from "react";
-import Technology from "interfaces/cv/experience/technology";
-export default class TechStack extends React.Component<{ technologies: Technology }> {
+import Props from "interfaces/components/experience/tech_stack";
+export default class TechStack extends React.Component<Props> {
     override render() {
         return (
             <>

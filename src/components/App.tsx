@@ -5,8 +5,8 @@ import React from 'react';
 import Header from 'components/header';
 import Aside from 'components/aside';
 import Main from 'components/main';
-import AppInterface from 'interfaces/components/App';
-export default class App extends React.Component<{}, AppInterface> {
+import State from 'interfaces/components/App';
+export default class App extends React.Component<{}, State> {
     constructor(props: any) {
         super(props);
         this.state = {
