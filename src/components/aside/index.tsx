@@ -3,10 +3,10 @@ import Buttons from "components/aside/buttons";
 import Details from "components/aside/details";
 import Language from "components/aside/languajes";
 import Links from "components/aside/links";
-import { Language as LanguageType, Titles } from "types";
+import { Language as LanguageType, AsideTitles } from "types";
 import { Props, State } from "interfaces/components/aside";
 export default class Aside extends React.Component<Props, State> {
-    titles: Titles = {
+    titles: AsideTitles = {
         es: {
             details: "Detalles",
             links: "Links",

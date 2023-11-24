@@ -77,6 +77,7 @@ export default class App extends React.Component<{}, State> {
                                             aboutMe={cv.aboutMe}
                                             experience={cv.experience}
                                             education={cv.education}
+                                            language={this.state.lang}
                                         />
                                     </div>
                                     <div className="column">

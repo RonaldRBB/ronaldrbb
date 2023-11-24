@@ -1,5 +1,5 @@
 type Language = "es" | "en";
-type Titles = {
+type AsideTitles = {
     [language in Language]: {
         details: string;
         links: string;
@@ -7,6 +7,13 @@ type Titles = {
         downloadCV: string;
     };
 };
+type MainTitles = {
+    [language in Language]: {
+        aboutMe: string;
+        experience: string;
+        education: string;
+    };
+}
 export type {
-    Language, Titles
+    Language, AsideTitles, MainTitles
 }
