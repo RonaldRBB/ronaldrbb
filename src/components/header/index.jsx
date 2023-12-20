@@ -17,8 +17,8 @@ export default class Header extends React.Component {
                         </figure>
                     </div>
                     <div className="column">
-                        <h1 className="title">Nombre Apellido</h1>
-                        <h2 className="subtitle is-6">Titulo</h2>
+                        <h1 className="title">{this.props.cv.name}</h1>
+                        <h2 className="subtitle is-6">{this.props.cv.title}</h2>
                     </div>
                 </div>
             </>

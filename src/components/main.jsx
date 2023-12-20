@@ -34,7 +34,7 @@ export default class Main extends React.Component {
                 <div className="pageloader"><span className="title">Loading</span></div>
                 <div className="columns is-multiline is-mobile">
                     <div className="column is-12">
-                        <Header />
+                        <Header cv={cv} />
                     </div>
                     <div className="column is-9">
                         <p>content</p>
