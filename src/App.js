@@ -1,20 +1,28 @@
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <section class="section has-background-link-light">
+        <div class="container ">
+          <div class="columns is-centered">
+            <div class="column box has-background-white is-8 p-6">
+              {/* start */}
+              <div className="columns is-multiline is-mobile">
+                <div className="column is-12">
+                  <p>header</p>
+                </div>
+                <div className="column is-9">
+                  <p>content</p>
+                </div>
+                <div className="column is-3">
+                  <p>aside</p>
+                </div>
+              </div>
+              {/* end */}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div >
   );
 }
 
