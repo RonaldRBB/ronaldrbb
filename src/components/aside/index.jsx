@@ -5,43 +5,46 @@ export default class Aside extends React.Component {
             <div className="content">
                 <h2 className="title is-5">Detalles</h2>
                 <ul style={{ listStyle: "none" }}>
-                    <li>CABA, Argentina</li>
+                    <li>{this.props.cv.details.location}</li>
                     <li>
-                        <a href="mailto:ronaldbello2@gmail.com">ronaldbello2@gmail.com</a>
+                        <a href={`mailto:${this.props.cv.details.email}`}>{this.props.cv.details.email}</a>
                     </li>
-                    <li>+54 9 11 3946-4316</li>
+                    <li>{this.props.cv.details.phone}</li>
                 </ul>
                 <h2 className="title is-5">Links</h2>
                 <ul style={{ listStyleType: "none" }}>
+                    {this.props.cv.links.map((link) => (
+                        <li key={link.name}>
+                            <a href={link.value} target="_blank" rel="noreferrer">
+                                {link.name}
+                            </a>
+                        </li>
+                    ))}
                     <li>
-                        <a href="https://www.linkedin.com/in/ronaldrbb">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/ronaldrbb">GitHub</a>
+                        <a href={this.props.cv.links[1].value} target="_blank" rel="noreferrer">
+                            {this.props.cv.links[1].name}
+                        </a>
                     </li>
                 </ul>
                 <h2 className="title is-5">Lenguajes</h2>
                 <ul style={{ listStyle: "none" }}>
-                    <li>Español (Nativo)</li>
-                    <li>Inglés (Intermedio)</li>
+                    {this.props.cv.languages.map((language) => (
+                        <li key={language}>{language}</li>
+                    ))}
                 </ul>
                 <h2 className="title is-5">Descargar CV</h2>
                 <ul style={{ listStyle: "none" }}>
                     <div className="buttons">
-                        <a
-                            href="docs/ronald_bello_backend_dev.pdf"
-                            download=""
-                            className="button is-link"
-                        >
-                            Esp
-                        </a>
-                        <a
-                            href="docs/ronald_bello_backend_dev_eng.pdf"
-                            download=""
-                            className="button is-link"
-                        >
-                            Eng
-                        </a>
+                        {this.props.cv.downloadCV.map((pdf) => (
+                            <a
+                                key={"aside_button-" + pdf.lang}
+                                download=""
+                                href={`${process.env.PUBLIC_URL}/files/${pdf.file_name}`}
+                                className="button is-link"
+                            >
+                                {pdf.lang}
+                            </a>
+                        ))}
                     </div>
                 </ul>
             </div>

@@ -18,8 +18,9 @@ export default class Main extends React.Component {
     async getCVData() {
         try {
             const cv = new Cv();
-            const jsonData = await cv.getData();
-            this.setState({ cv: jsonData });
+            const cvData = await cv.getData();
+            console.log(cvData);
+            this.setState({ cv: cvData });
         } catch (error) {
             console.error('Error handling JSON data:', error);
         }
@@ -40,7 +41,7 @@ export default class Main extends React.Component {
                         <p>content</p>
                     </div>
                     <div className="column is-3">
-                        <Aside />
+                        <Aside cv={cv} />
                     </div>
                 </div>
             </>
