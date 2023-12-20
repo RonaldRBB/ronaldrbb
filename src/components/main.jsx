@@ -1,7 +1,28 @@
 import React from 'react';
 import Header from './header';
 import Aside from './aside';
+import Cv from '../services/cv';
 export default class Main extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            cv: null
+        };
+    }
+    componentDidMount() {
+        setTimeout(() => {
+            this.getCVData();
+        }, 500);
+    }
+    async getCVData() {
+        try {
+            const cv = new Cv();
+            const jsonData = await cv.getData();
+            this.setState({ cv: jsonData });
+        } catch (error) {
+            console.error('Error handling JSON data:', error);
+        }
+    }
     render() {
         return (
             <div className="columns is-multiline is-mobile">

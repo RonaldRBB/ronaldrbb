@@ -4,10 +4,10 @@ export default class App extends React.Component {
     render() {
         return (
             <div className="App">
-                <section class="section has-background-link-light">
-                    <div class="container ">
-                        <div class="columns is-centered">
-                            <div class="column box has-background-white is-8 p-6">
+                <section className="section has-background-link-light">
+                    <div className="container ">
+                        <div className="columns is-centered">
+                            <div className="column box has-background-white is-8 p-6">
                                 <Main />
                             </div>
                         </div>

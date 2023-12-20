@@ -1,5 +1,11 @@
 import React from 'react';
 export default class Header extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            profilePictureUrl: process.env.PUBLIC_URL + "/img/profile.jpeg",
+        }
+    }
     render() {
         return (
             <>
@@ -7,7 +13,7 @@ export default class Header extends React.Component {
                 <div className="columns is-vcentered">
                     <div className="column is-3">
                         <figure className="image is-128x128">
-                            <img className="is-rounded" src={process.env.PUBLIC_URL + "/img/profile.jpeg"} alt="Foto de Perfil" />
+                            <img className="is-rounded" src={this.state.profilePictureUrl} alt="Foto de Perfil" />
                         </figure>
                     </div>
                     <div className="column">
