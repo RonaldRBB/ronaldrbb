@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './header';
 import Aside from './aside';
 import Cv from '../services/cv';
+
 export default class Main extends React.Component {
     constructor(props) {
         super(props);
@@ -24,19 +25,25 @@ export default class Main extends React.Component {
         }
     }
     render() {
+        const { cv } = this.state;
+        if (!cv) {
+            return <div className="pageloader is-active"><span className="title">Loading</span></div>;
+        }
         return (
-            <div className="columns is-multiline is-mobile">
-                <div className="column is-12">
-                    <Header />
+            <>
+                <div className="pageloader"><span className="title">Loading</span></div>
+                <div className="columns is-multiline is-mobile">
+                    <div className="column is-12">
+                        <Header />
+                    </div>
+                    <div className="column is-9">
+                        <p>content</p>
+                    </div>
+                    <div className="column is-3">
+                        <Aside />
+                    </div>
                 </div>
-                <div className="column is-9">
-                    <p>content</p>
-                </div>
-                <div className="column is-3">
-                    <Aside />
-                </div>
-            </div>
+            </>
         );
     }
 }
-
