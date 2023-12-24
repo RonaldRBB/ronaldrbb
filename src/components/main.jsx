@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './header';
 import Aside from './aside';
 import Cv from '../services/cv';
+import Content from './content';
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -38,7 +39,7 @@ export default class Main extends React.Component {
                         <Header cv={cv} />
                     </div>
                     <div className="column is-9">
-                        <p>content</p>
+                        <Content cv={cv} />
                     </div>
                     <div className="column is-3">
                         <Aside cv={cv} />

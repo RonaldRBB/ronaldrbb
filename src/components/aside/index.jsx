@@ -20,11 +20,6 @@ export default class Aside extends React.Component {
                             </a>
                         </li>
                     ))}
-                    <li>
-                        <a href={this.props.cv.links[1].value} target="_blank" rel="noreferrer">
-                            {this.props.cv.links[1].name}
-                        </a>
-                    </li>
                 </ul>
                 <h2 className="title is-5">Lenguajes</h2>
                 <ul style={{ listStyle: "none" }}>
