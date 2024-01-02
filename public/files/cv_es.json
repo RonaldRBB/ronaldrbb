@@ -207,7 +207,7 @@
         }
     ],
     "education": {
-        "university": [
+        "universities": [
             {
                 "title": "Ingeniería de Sistemas",
                 "name": "Instituto Politécnico Santiago Mariño"

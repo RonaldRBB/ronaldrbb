@@ -61,12 +61,55 @@ export default class Content extends React.Component {
             </>
         )
     }
+    getEducation() {
+        return (
+            <>
+                <h2 className="title is-4">• Formación Académica</h2>
+                <div className="ml-4">
+                    <h3 class="title is-5">Formación Universitaria</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Universidad</th>
+                            </tr>
+                        </thead>
+                        {this.props.cv.education.universities.map((university) => (
+                            <tbody>
+                                <tr>
+                                    <td>{university.title}</td>
+                                    <td>{university.name}</td>
+                                </tr>
+                            </tbody>
+                        ))}
+                    </table>
+                    <h3 class="title is-5">Formación Complementaria</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Instituticion</th>
+                            </tr>
+                        </thead>
+                        {this.props.cv.education.courses.map((course) => (
+                            <tbody>
+                                <tr>
+                                    <td><a href={course.link}>{course.name}</a></td>
+                                    <td>{course.institution}</td>
+                                </tr>
+                            </tbody>
+                        ))}
+                    </table>
+                </div>
+            </>
+        )
+    }
     render() {
         return (
             <div className="content">
                 {this.getAboutMe()}
                 {this.getExperience()}
-                <h2 className="title is-4">• Formación Académica</h2>
+                {this.getEducation()}
             </div>
         );
     }
