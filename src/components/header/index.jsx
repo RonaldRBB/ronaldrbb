@@ -7,11 +7,7 @@ export default class Header extends React.Component {
             profilePictureUrl: process.env.PUBLIC_URL + "/img/profile.jpeg",
             buttonContent: "CV en español"
         };
-        // this.toggleLang = this.toggleLang.bind(this);
     }
-    // toggleLang() {
-    //     this.props.toggleLang();
-    // }
     componentDidUpdate(prevProps) {
         if (prevProps.lang !== this.props.lang) {
             const buttonContent = this.props.lang === "en" ? "CV en español" : "CV in english";
