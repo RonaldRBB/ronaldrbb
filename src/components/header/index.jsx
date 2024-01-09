@@ -1,17 +1,28 @@
 import React from 'react';
+
 export default class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             profilePictureUrl: process.env.PUBLIC_URL + "/img/profile.jpeg",
+            buttonContent: "CV en español"
+        };
+        // this.toggleLang = this.toggleLang.bind(this);
+    }
+    // toggleLang() {
+    //     this.props.toggleLang();
+    // }
+    componentDidUpdate(prevProps) {
+        if (prevProps.lang !== this.props.lang) {
+            const buttonContent = this.props.lang === "en" ? "CV en español" : "CV in english";
+            this.setState({ buttonContent });
         }
     }
     render() {
         return (
             <>
                 <div style={{ textAlign: "center" }}>
-                    <a href="cv_eng.html" className="button is-link is-inverted is-size-7">CV in english</a>
-                    <button className="button is-link is-inverted is-size-7" onClick={this.props.toggleLang}>Toggle Language</button>
+                    <button className="button is-link is-inverted is-size-7" onClick={ this.props.toggleLang}>{this.state.buttonContent}</button>
                 </div>
                 <div className="columns is-vcentered">
                     <div className="column is-3">
