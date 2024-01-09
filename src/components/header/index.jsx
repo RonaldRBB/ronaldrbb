@@ -9,7 +9,10 @@ export default class Header extends React.Component {
     render() {
         return (
             <>
-                <div style={{ textAlign: "center" }}><a href="cv_eng.html" className="button is-link is-inverted is-size-7">CV in english</a></div>
+                <div style={{ textAlign: "center" }}>
+                    <a href="cv_eng.html" className="button is-link is-inverted is-size-7">CV in english</a>
+                    <button className="button is-link is-inverted is-size-7" onClick={this.props.toggleLang}>Toggle Language</button>
+                </div>
                 <div className="columns is-vcentered">
                     <div className="column is-3">
                         <figure className="image is-128x128">

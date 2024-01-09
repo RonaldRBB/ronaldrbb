@@ -52,7 +52,7 @@ export default class Content extends React.Component {
     }
     getEducation() {
         return (<>
-            <h3 class="title is-5">Formación Universitaria</h3>
+            <h3 className="title is-5">Formación Universitaria</h3>
             <table>
                 <thead>
                     <tr>
@@ -69,7 +69,7 @@ export default class Content extends React.Component {
                     </tbody>
                 ))}
             </table>
-            <h3 class="title is-5">Formación Complementaria</h3>
+            <h3 className="title is-5">Formación Complementaria</h3>
             <table>
                 <thead>
                     <tr>

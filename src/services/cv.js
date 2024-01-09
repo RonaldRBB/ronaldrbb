@@ -1,7 +1,7 @@
 export default class Cv {
-    async getData() {
+    async getData(lang) {
         try {
-            const response = await fetch(`${process.env.PUBLIC_URL}/files/cv_es.json`);
+            const response = await fetch(`${process.env.PUBLIC_URL}/files/cv_${lang}.json`);
             const jsonData = await response.json();
             return jsonData;
         } catch (error) {

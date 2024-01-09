@@ -9,11 +9,11 @@
     },
     "links": [
         {
-            "name": "linkedin",
+            "name": "Linkedin",
             "value": "https://www.linkedin.com/in/ronaldrbb"
         },
         {
-            "name": "github",
+            "name": "GitHub",
             "value": "https://github.com/ronaldrbb"
         }
     ],
@@ -205,7 +205,7 @@
         }
     ],
     "education": {
-        "university": [
+        "universities": [
             {
                 "title": "Systems Engineering",
                 "name": "Instituto Politécnico Santiago Mariño"
