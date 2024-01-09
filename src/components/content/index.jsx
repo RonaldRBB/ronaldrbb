@@ -1,5 +1,43 @@
 import React from 'react';
 export default class Content extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            aboutMeTitle: "Sobre mi",
+            experienceTitle: "Experiencia",
+            educationTitle: "Formación",
+            projectsTitle: "Proyectos",
+            languagesTitle: "Lenguajes",
+            frameworksTitle: "Frameworks/Librerías",
+            environmentTitle: "Ambiente de Desarrollo",
+            platformsTitle: "Plataformas",
+            universitiesTitle: "Universidades",
+            universityTitleTitle: "Universidad",
+            universityTitleName: "Nombre",
+            coursesTitle: "Formacion Complementaria",
+            courseTitleTitle: "Nombre",
+            courseTitleName: "Instituto"
+        }
+    }
+    componentDidUpdate(prevProps) {
+        if (prevProps.lang !== this.props.lang) {
+            const aboutMeTitle = this.props.lang === "en" ? "About me" : "Sobre mi";
+            const experienceTitle = this.props.lang === "en" ? "Experience" : "Experiencia";
+            const educationTitle = this.props.lang === "en" ? "Education" : "Formación";
+            const projectsTitle = this.props.lang === "en" ? "Projects" : "Proyectos";
+            const languagesTitle = this.props.lang === "en" ? "Languages" : "Lenguajes";
+            const frameworksTitle = this.props.lang === "en" ? "Frameworks/Libraries" : "Frameworks/Librerías";
+            const environmentTitle = this.props.lang === "en" ? "Environment" : "Ambiente de Desarrollo";
+            const platformsTitle = this.props.lang === "en" ? "Platforms" : "Plataformas";
+            const universitiesTitle = this.props.lang === "en" ? "Universities" : "Universidades";
+            const universityTitleTitle = this.props.lang === "en" ? "University" : "Universidad";
+            const universityTitleName = this.props.lang === "en" ? "Name" : "Nombre";
+            const coursesTitle = this.props.lang === "en" ? "Courses" : "Formacion Complementaria";
+            const courseTitleTitle = this.props.lang === "en" ? "Course" : "Nombre";
+            const courseTitleName = this.props.lang === "en" ? "Institute" : "Instituto";
+            this.setState({ aboutMeTitle, experienceTitle, educationTitle, projectsTitle, languagesTitle, frameworksTitle, environmentTitle, platformsTitle, universitiesTitle, universityTitleTitle, universityTitleName, coursesTitle, courseTitleTitle, courseTitleName });
+        }
+    }
     getAboutMe() {
         return (<>
             <p>{this.props.cv.aboutMe} {this.getAntiAi()}</p>
@@ -19,7 +57,7 @@ export default class Content extends React.Component {
                 <p>
                     {experience.companyDescription}
                 </p>
-                <p><em><strong>Proyectos:</strong></em></p>
+                <p><em><strong>{this.state.projectsTitle}:</strong></em></p>
                 <ul>
                     {experience.projects.map((project) => (
                         <li key={project}>{project}</li>
@@ -29,19 +67,19 @@ export default class Content extends React.Component {
                 <table className='table'>
                     <tbody>
                         <tr>
-                            <td><strong>Lenguajes</strong></td>
+                            <td><strong>{this.state.languagesTitle}</strong></td>
                             <td>{experience.technologies.languages.join(', ')}.</td>
                         </tr>
                         <tr>
-                            <td><strong>Frameworks/librerías</strong></td>
+                            <td><strong>{this.state.frameworksTitle}</strong></td>
                             <td>{experience.technologies.frameworks.join(', ')}.</td>
                         </tr>
                         <tr>
-                            <td><strong>Ambiente de Desarrollo</strong></td>
+                            <td><strong>{this.state.environmentTitle}</strong></td>
                             <td>{experience.technologies.developmentEnvironment.join(', ')}.</td>
                         </tr>
                         <tr>
-                            <td><strong>Plataformas</strong></td>
+                            <td><strong>{this.state.platformsTitle}</strong></td>
                             <td>{experience.technologies.platforms.join(', ')}.</td>
                         </tr>
                     </tbody>
@@ -52,12 +90,12 @@ export default class Content extends React.Component {
     }
     getEducation() {
         return (<>
-            <h3 className="title is-5">Formación Universitaria</h3>
+            <h3 className="title is-5">{this.state.universitiesTitle}</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Universidad</th>
+                        <th>{this.state.universityTitleTitle}</th>
+                        <th>{this.state.universityTitleName}</th>
                     </tr>
                 </thead>
                 {this.props.cv.education.universities.map((university) => (
@@ -69,12 +107,12 @@ export default class Content extends React.Component {
                     </tbody>
                 ))}
             </table>
-            <h3 className="title is-5">Formación Complementaria</h3>
+            <h3 className="title is-5">{this.state.coursesTitle}</h3>
             <table>
                 <thead>
                     <tr>
-                        <th>Nombre</th>
-                        <th>Instituticion</th>
+                        <th>{this.state.courseTitleTitle}</th>
+                        <th>{this.state.courseTitleName}</th>
                     </tr>
                 </thead>
                 {this.props.cv.education.courses.map((course) => (
@@ -105,11 +143,11 @@ export default class Content extends React.Component {
     render() {
         return (
             <div className="content">
-                <h2 className="title is-4">• Sobre mí</h2>
+                <h2 className="title is-4">• {this.state.aboutMeTitle}</h2>
                 <div className="ml-4">{this.getAboutMe()}</div>
-                <h2 className="title is-4">• Experiencia</h2>
+                <h2 className="title is-4">• {this.state.experienceTitle}</h2>
                 <div className="ml-4">{this.getExperience()}</div>
-                <h2 className="title is-4">• Formación Académica</h2>
+                <h2 className="title is-4">• {this.state.educationTitle}</h2>
                 <div className="ml-4">{this.getEducation()}</div>
             </div>
         );

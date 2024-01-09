@@ -1,5 +1,23 @@
 import React from 'react';
 export default class Aside extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            detailsTitle: "Detalles",
+            linksTitle: "Enlaces",
+            languagesTitle: "Lenguajes",
+            cvFileTitle: "Descargar CV"
+        };
+    }
+    componentDidUpdate(prevProps) {
+        if (prevProps.lang !== this.props.lang) {
+            const detailsTitle = this.props.lang === "en" ? "Details" : "Detalles";
+            const linksTitle = this.props.lang === "en" ? "Links" : "Enlaces";
+            const languagesTitle = this.props.lang === "en" ? "Languages" : "Lenguajes";
+            const cvFileTitle = this.props.lang === "en" ? "Download CV" : "Descargar CV";
+            this.setState({ detailsTitle, linksTitle, languagesTitle, cvFileTitle });
+        }
+    }
     getDetails() {
         return (<>
             <ul style={{ listStyle: "none" }}>
@@ -56,13 +74,13 @@ export default class Aside extends React.Component {
     render() {
         return (
             <div className="content">
-                <h2 className="title is-5">Detalles</h2>
+                <h2 className="title is-5">{this.state.detailsTitle}</h2>
                 {this.getDetails()}
-                <h2 className="title is-5">Links</h2>
+                <h2 className="title is-5">{this.state.linksTitle}</h2>
                 {this.getLinks()}
-                <h2 className="title is-5">Lenguajes</h2>
+                <h2 className="title is-5">{this.state.languagesTitle}</h2>
                 {this.getLanguages()}
-                <h2 className="title is-5">Descargar CV</h2>
+                <h2 className="title is-5">{this.state.cvFileTitle}</h2>
                 {this.getCvFile()}
             </div>
         );

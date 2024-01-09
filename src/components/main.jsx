@@ -48,8 +48,8 @@ export default class Main extends React.Component {
                 <div className="pageloader"><span className="title">Loading</span></div>
                 <div className="columns is-multiline is-mobile">
                     <div className="column is-12"><Header cv={cv} lang={this.state.lang} toggleLang={this.toggleLang} /></div>
-                    <div className="column is-9"><Content cv={cv} /></div>
-                    <div className="column is-3"><Aside cv={cv} /></div>
+                    <div className="column is-9"><Content cv={cv} lang={this.state.lang} /></div>
+                    <div className="column is-3"><Aside cv={cv} lang={this.state.lang} /></div>
                 </div>
             </>
         );
