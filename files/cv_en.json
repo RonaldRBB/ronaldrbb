@@ -1,56 +1,55 @@
 {
     "name": "Ronald Bello",
-    "title": "Backend Developer - Systems Engineer - Backend Lover",
-    "aboutMe": "Passionate Full Stack Developer with experience since 2012 in PHP, Python, Laravel, and Node.js. Specialized in REST API development, Microservices, integration of external services, and web applications. Committed to positively contributing to product quality and user experience.",
+    "title": "Senior Backend Developer • Systems Engineer • Backend Lover",
+    "aboutMe": "Passionate Full Stack Developer with experience since 2012 in PHP, Python, Laravel, and Node.js. Specialized in the development of RESTful APIs, Microservices, integration of external services, and web applications. Committed to positively contributing to product quality and user experience.",
     "details": {
         "location": "CABA, Argentina",
         "email": "ronaldbello2@gmail.com",
         "phone": "+54 9 11 3946-4316"
     },
-    "links": {
-        "linkedin": "https://www.linkedin.com/in/ronaldrbb",
-        "github": "https://github.com/ronaldrbb"
-    },
-    "languages": [
+    "links": [
         {
-            "spanish": "Native"
+            "name": "Linkedin",
+            "value": "https://www.linkedin.com/in/ronaldrbb"
         },
         {
-            "english": "Intermediate"
+            "name": "GitHub",
+            "value": "https://github.com/ronaldrbb"
         }
     ],
-    "downloadCV": {
-        "spanish": "docs/ronald_bello_backend_dev.pdf",
-        "english": "docs/ronald_bello_backend_dev_eng.pdf"
-    },
+    "languages": [
+        "Native Spanish",
+        "Intermediate English"
+    ],
+    "downloadCV": [
+        {
+            "lang": "es",
+            "file_name": "ronald_bello_backend_dev_es.pdf"
+        },
+        {
+            "lang": "en",
+            "file_name": "ronald_bello_backend_dev_eng.pdf"
+        }
+    ],
     "experience": [
         {
             "position": "Backend Developer",
-            "company": "Cobro Digital S.R.L., Argentina",
+            "company": "Cobro Digital S.R.L.",
+            "location": "Argentina",
             "period": "January 2022 - Present",
+            "companyDescription": "Cobro Digital offers customized solutions for billing, collection, and payments, with PCI certification for secure credit and debit card transactions.",
             "projects": [
-                {
-                    "name": "Antifraud microservice API",
-                    "description": "Reducing the probability of fraud in credit card payments."
-                },
-                {
-                    "name": "Integration with Payway Direct Debits",
-                    "description": "Introduction of a subscription billing product and compliance with PCI regulations."
-                },
-                {
-                    "name": "Integration with ThreatMetrix",
-                    "description": "Improvement of fraud prevention."
-                },
-                {
-                    "name": "Core code refactoring",
-                    "description": "Compliance with PCI regulations and 90% improvement in query response time."
-                }
+                "Creation of an anti-fraud microservice API to reduce the probability of fraud in credit card payments.",
+                "Development of an integration with Automatic Debits from Payway to introduce a subscription billing product and comply with PCI regulations.",
+                "Development of an integration with ThreatMetrix to enhance fraud prevention.",
+                "Refactoring of the core system code to comply with PCI regulations and protect customer data.",
+                "Refactoring of the core system code and a 90% improvement in response time for card operations queries."
             ],
             "technologies": {
                 "languages": [
                     "PHP 8.2",
                     "PHP 7.4",
-                    "python3.11",
+                    "Python 3.11",
                     "JavaScript ES6",
                     "SQL"
                 ],
@@ -73,13 +72,12 @@
         },
         {
             "position": "Full Stack Developer",
-            "company": "Datasocial SL, Spain",
+            "company": "Datasocial SL",
+            "location": "Spain",
             "period": "February 2021 - May 2021",
+            "companyDescription": "Agency specialized in HubSpot, a leader in comprehensive solutions for sales, marketing, and customer service.",
             "projects": [
-                {
-                    "name": "API services integration",
-                    "description": "Facilitating calls to contacts from the HubSpot website."
-                }
+                "Integration of API services from Hubspot and Dialoga España to facilitate calls to contacts from the HubSpot website."
             ],
             "technologies": {
                 "languages": [
@@ -103,33 +101,17 @@
         },
         {
             "position": "Full Stack Developer",
-            "company": "Hotel Wyndham Concorde, Venezuela",
+            "company": "Hotel Wyndham Concorde",
+            "location": "Venezuela",
             "period": "May 2019 - February 2021",
+            "companyDescription": "Led innovative projects at the luxurious 5-star resort Wyndham Concorde Isla Margarita.",
             "projects": [
-                {
-                    "name": " 'Club Concorde' system",
-                    "description": "Membership management, operational maintenance during the pandemic, and generation of sales reports."
-                },
-                {
-                    "name": "QR code reader",
-                    "description": "Access control during the COVID-19 pandemic."
-                },
-                {
-                    "name": "Chatbot via Twilio API",
-                    "description": "Facilitating hotel reservations and services."
-                },
-                {
-                    "name": "QR code system on bracelets",
-                    "description": "Reducing customer wait times."
-                },
-                {
-                    "name": "Email marketing tool",
-                    "description": "Customer acquisition and loyalty through mass email campaigns."
-                },
-                {
-                    "name": "WordPress plugin 'Fiesta Reserva'",
-                    "description": "Online ticket sales, streamlining the ticket sales process for events."
-                }
+                "Development of the \"Club Concorde\" system to manage memberships, maintain operations during the pandemic, and generate sales reports.",
+                "Development of a QR code reader for Club Concorde membership cards, ensuring access control during the COVID-19 pandemic.",
+                "Creation of a chatbot using Twilio's API to facilitate hotel reservations and services.",
+                "Development of a QR code system on bracelets for \"Reserva Fiestas\" events, reducing customer waiting times.",
+                "Development of an email marketing tool to attract and retain customers through mass email campaigns.",
+                "Creation of the WordPress plugin \"Reserva Fiestas\" for online ticket sales, streamlining the ticket sales process for events."
             ],
             "technologies": {
                 "languages": [
@@ -162,21 +144,14 @@
         },
         {
             "position": "Full Stack Developer",
-            "company": "Hotel Margarita Real - Venezuela",
+            "company": "Hotel Margarita Real",
+            "location": "Venezuela",
             "period": "September 2016 - May 2019",
+            "companyDescription": "Developed projects to improve the hotel's operations and guest experience.",
             "projects": [
-                {
-                    "name": "Automated tool to monitor workstations",
-                    "description": "Control over the use of computers and devices on the hotel network."
-                },
-                {
-                    "name": "Guest room registration and assignment system",
-                    "description": "Improved check-in and check-out."
-                },
-                {
-                    "name": "Automation scripts to back up databases",
-                    "description": "Ensuring the integrity of company data."
-                }
+                "Automated tool to monitor workstations of staff, providing control over the use of computers and devices on the hotel network.",
+                "Guest room registration and assignment system to improve check-in and check-out processes.",
+                "Development of automation scripts to back up databases, ensuring data integrity for the company."
             ],
             "technologies": {
                 "languages": [
@@ -202,13 +177,12 @@
         },
         {
             "position": "Full Stack Developer",
-            "company": "Voltium,C.A - Venezuela",
+            "company": "Voltium, C.A.",
+            "location": "Venezuela",
             "period": "September 2012 - May 2016",
+            "companyDescription": "",
             "projects": [
-                {
-                    "name": "E-commerce website development",
-                    "description": "E-commerce website and inventory management system for a technology store."
-                }
+                "Developed an e-commerce website and inventory management system for a technology store."
             ],
             "technologies": {
                 "languages": [
@@ -230,14 +204,14 @@
             }
         }
     ],
-    "academicBackground": {
-        "universityEducation": [
+    "education": {
+        "universities": [
             {
-                "name": "Systems Engineering",
-                "university": "Instituto Politécnico Santiago Mariño"
+                "title": "Systems Engineering",
+                "name": "Instituto Politécnico Santiago Mariño"
             }
         ],
-        "additionalTraining": [
+        "courses": [
             {
                 "name": "Secure Development",
                 "institution": "Educacion IT",

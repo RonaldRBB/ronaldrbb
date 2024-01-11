@@ -1,64 +1,47 @@
 {
     "name": "Ronald Bello",
-    "title": "Desarrollador Backend - Ingeniero de Sistemas - Backend Lover",
+    "title": "Senior Backend Developer • Ing. de Sistemas • Backend Lover",
     "aboutMe": "Desarrollador Full Stack apasionado con experiencia desde 2012 en PHP, Python, Laravel, y Node.js. Especializado en el desarrollo de API REST, Microservicios, integración de servicios externos y aplicaciones web. Comprometido a contribuir positivamente a la calidad del producto y la experiencia del usuario.",
     "details": {
-        "location": {
-            "value": null,
-            "name": "CABA, Argentina",
-            "link": null
-        },
-        "email": {
-            "value": null,
-            "name": "ronaldbello2@gmail.com",
-            "link": "mailto"
-        },
-        "phone": {
-            "value": "+54 9 11 3946-4316",
-            "name": "+54 9 11 3946-4316",
-            "link": null
-        }
+        "location": "CABA, Argentina",
+        "email": "ronaldbello2@gmail.com",
+        "phone": "+54 9 11 3946-4316"
     },
-    "links": {
-        "linkedin": {
-            "value": "https://www.linkedin.com/in/ronaldrbb",
-            "name": "linkedin",
-            "link": "href"
-        },
-        "github": {
-            "value": "https://github.com/ronaldrbb",
-            "name": "github",
-            "link": "href"
-        }
-    },
-    "languages": [
+    "links": [
         {
-            "spanish": {
-                "value": "Español Nativo",
-                "link": null
-            }
+            "name": "Linkedin",
+            "value": "https://www.linkedin.com/in/ronaldrbb"
         },
         {
-            "english": {
-                "value": "Ingles Intermedio",
-                "link": null
-            }
+            "name": "GitHub",
+            "value": "https://github.com/ronaldrbb"
         }
     ],
-    "downloadCV": {
-        "spanish": "docs/ronald_bello_backend_dev.pdf",
-        "english": "docs/ronald_bello_backend_dev_eng.pdf"
-    },
+    "languages": [
+        "Español Nativo",
+        "Ingles Intermedio"
+    ],
+    "downloadCV": [
+        {
+            "lang": "es",
+            "file_name": "ronald_bello_backend_dev_es.pdf"
+        },
+        {
+            "lang": "en",
+            "file_name": "ronald_bello_backend_dev_eng.pdf"
+        }
+    ],
     "experience": [
         {
             "position": "Desarrollador Backend",
-            "company": "Cobro Digital S.R.L., Argentina",
+            "company": "Cobro Digital S.R.L.",
+            "location": "Argentina",
             "period": "Enero 2022 - Actualidad",
             "companyDescription": "Cobro Digital ofrece soluciones personalizadas de cobranza, recaudación y pagos, con certificación PCI para transacciones seguras con tarjetas de crédito y débito.",
             "projects": [
                 "Creación de una API microservicio antifraude para reducir la probabilidad de fraude en pagos con tarjeta de crédito.",
                 "Desarrollo de una integración con Débitos Automáticos de Payway para introducir un producto de cobro por suscripción y cumplir con normativas PCI.",
-                "Desarrollo de una integración con <a href='https://risk.lexisnexis.com/products/threatmetrix'>ThreatMetrix</a> para mejorar la prevención de fraude.",
+                "Desarrollo de una integración con ThreatMetrix para mejorar la prevención de fraude.",
                 "Refactorización del código core del sistema para cumplir con regulaciones PCI y proteger datos de clientes.",
                 "Refactorización del código core del sistema y mejora del 90% en el tiempo de respuesta de consultas de operaciones con tarjetas."
             ],
@@ -89,12 +72,13 @@
         },
         {
             "position": "Desarrollador Full Stack",
-            "company": "Datasocial SL, España",
+            "company": "Datasocial SL",
+            "location": "España",
             "period": "Febrero 2021 - Mayo 2021",
             "companyDescription": "Agencia especializada en HubSpot, líder en soluciones integrales de ventas, marketing y servicio al cliente.",
             "projects": [
                 [
-                    "Integración de servicios API de <a href='https://www.hubspot.es/'>Hubspot</a> y <a href='https://dialogagroup.com/es/'>Dialoga España</a> para facilitar llamadas a contactos desde el sitio web de HubSpot."
+                    "Integración de servicios API de Hubspot y Dialoga España para facilitar llamadas a contactos desde el sitio web de HubSpot."
                 ]
             ],
             "technologies": {
@@ -119,13 +103,14 @@
         },
         {
             "position": "Desarrollador Full Stack",
-            "company": "Hotel Wyndham Concorde, Venezuela",
+            "company": "Hotel Wyndham Concorde",
+            "location": "Venezuela",
             "period": "Mayo 2019 - Febrero 2021",
             "companyDescription": "Lideré proyectos innovadores en el lujoso resort 5 estrellas Wyndham Concorde Isla Margarita.",
             "projects": [
                 "Desarrollo del sistema \"Club Concorde\" para gestionar membresías, mantener la operación durante la pandemia y generar informes de ventas.",
                 "Desarrollo de Lector de código QR para tarjetas de membresías del Club Concorde, asegurando el control de acceso durante la pandemia de COVID-19.",
-                "Creación de un chatbot mediante la API de <a href='https://www.twilio.com/'>Twilio</a> para facilitar reservas y servicios del hotel.",
+                "Creación de un chatbot mediante la API de Twilio para facilitar reservas y servicios del hotel.",
                 "Desarrollo de sistema de códigos QR en brazaletes para eventos \"Reserva Fiestas\", reduciendo los tiempos de espera de los clientes.",
                 "Desarrollo de una herramienta de email marketing para captar y fidelizar clientes mediante envíos masivos de correos electrónicos.",
                 "Creación del plugin WordPress \"Reserva Fiestas\" para la venta de boletos en línea, agilizando el proceso de venta de boletería para eventos."
@@ -161,7 +146,8 @@
         },
         {
             "position": "Desarrollador Full Stack",
-            "company": "Hotel Margarita Real - Venezuela",
+            "company": "Hotel Margarita Real",
+            "location": "Venezuela",
             "period": "Septiembre 2016 - Mayo 2019",
             "companyDescription": "Desarrollé proyectos para mejorar la operatividad del hotel y la experiencia de los huéspedes.",
             "projects": [
@@ -193,7 +179,8 @@
         },
         {
             "position": "Desarrollador Full Stack",
-            "company": "Voltium, C.A - Venezuela",
+            "company": "Voltium, C.A.",
+            "location": "Venezuela",
             "period": "Septiembre 2012 - Mayo 2016",
             "companyDescription": "",
             "projects": [
@@ -220,13 +207,13 @@
         }
     ],
     "education": {
-        "universityEducation": [
+        "universities": [
             {
-                "name": "Ingeniería de Sistemas",
-                "university": "Instituto Politécnico Santiago Mariño"
+                "title": "Ingeniería de Sistemas",
+                "name": "Instituto Politécnico Santiago Mariño"
             }
         ],
-        "additionalCourses": [
+        "courses": [
             {
                 "name": "Desarrollo Seguro",
                 "institution": "Educacion IT",
