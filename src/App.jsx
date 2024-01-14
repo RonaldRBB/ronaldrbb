@@ -1,6 +1,5 @@
 import Main from "./components/main";
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 export default class App extends React.Component {
     webVersion() {
