@@ -32,6 +32,7 @@ export default class App extends React.Component {
         );
     }
     render() {
+    if (process.env.NODE_ENV === 'development') {
         return (
             <Router>
                 <Routes>
@@ -40,5 +41,8 @@ export default class App extends React.Component {
                 </Routes>
             </Router>
         );
+    } else {
+        return this.webVersion();
     }
+}
 }
