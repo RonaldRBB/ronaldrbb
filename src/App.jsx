@@ -32,17 +32,6 @@ export default class App extends React.Component {
         );
     }
     render() {
-    if (process.env.NODE_ENV === 'development') {
-        return (
-            <Router>
-                <Routes>
-                    <Route path="/" element={this.webVersion()} />
-                    <Route path="/pdf" element={this.pdfVersion()} />
-                </Routes>
-            </Router>
-        );
-    } else {
         return this.webVersion();
     }
-}
 }
