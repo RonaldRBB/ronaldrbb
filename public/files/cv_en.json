@@ -1,0 +1,237 @@
+{
+    "name": "Ronald Bello",
+    "title": "Senior Backend Developer • Systems Engineer • Backend Lover",
+    "aboutMe": "Passionate Full Stack Developer with experience since 2012 in PHP, Python, Laravel, and Node.js. Specialized in the development of RESTful APIs, Microservices, integration of external services, and web applications. Committed to positively contributing to product quality and user experience.",
+    "details": {
+        "location": "CABA, Argentina",
+        "email": "ronaldbello2@gmail.com",
+        "phone": "+54 9 11 3946-4316"
+    },
+    "links": [
+        {
+            "name": "Linkedin",
+            "value": "https://www.linkedin.com/in/ronaldrbb"
+        },
+        {
+            "name": "GitHub",
+            "value": "https://github.com/ronaldrbb"
+        }
+    ],
+    "languages": [
+        "Native Spanish",
+        "Intermediate English"
+    ],
+    "downloadCV": [
+        {
+            "lang": "es",
+            "file_name": "ronald_bello_backend_dev_es.pdf"
+        },
+        {
+            "lang": "en",
+            "file_name": "ronald_bello_backend_dev_eng.pdf"
+        }
+    ],
+    "experience": [
+        {
+            "position": "Backend Developer",
+            "company": "Cobro Digital S.R.L.",
+            "location": "Argentina",
+            "period": "January 2022 - Present",
+            "companyDescription": "Cobro Digital offers customized solutions for billing, collection, and payments, with PCI certification for secure credit and debit card transactions.",
+            "projects": [
+                "Creation of an anti-fraud microservice API to reduce the probability of fraud in credit card payments.",
+                "Development of an integration with Automatic Debits from Payway to introduce a subscription billing product and comply with PCI regulations.",
+                "Development of an integration with ThreatMetrix to enhance fraud prevention.",
+                "Refactoring of the core system code to comply with PCI regulations and protect customer data.",
+                "Refactoring of the core system code and a 90% improvement in response time for card operations queries."
+            ],
+            "technologies": {
+                "languages": [
+                    "PHP 8.2",
+                    "PHP 7.4",
+                    "Python 3.11",
+                    "JavaScript ES6",
+                    "SQL"
+                ],
+                "frameworks": [
+                    "Laravel 8",
+                    "Laravel 9",
+                    "Flask 3.0"
+                ],
+                "developmentEnvironment": [
+                    "Docker 24",
+                    "PostgreSQL 12.12",
+                    "Apache 2.4"
+                ],
+                "platforms": [
+                    "AWS",
+                    "Payway",
+                    "ThreatMetrix"
+                ]
+            }
+        },
+        {
+            "position": "Full Stack Developer",
+            "company": "Datasocial SL",
+            "location": "Spain",
+            "period": "February 2021 - May 2021",
+            "companyDescription": "Agency specialized in HubSpot, a leader in comprehensive solutions for sales, marketing, and customer service.",
+            "projects": [
+                "Integration of API services from Hubspot and Dialoga España to facilitate calls to contacts from the HubSpot website."
+            ],
+            "technologies": {
+                "languages": [
+                    "JavaScript ES6",
+                    "Python 3.10"
+                ],
+                "frameworks": [
+                    "Node.js 13.14",
+                    "Express.js 4.17",
+                    "Bootstrap 4.6"
+                ],
+                "developmentEnvironment": [
+                    "Docker 20.10",
+                    "Virtualbox 6.1"
+                ],
+                "platforms": [
+                    "AWS",
+                    "Hubspot"
+                ]
+            }
+        },
+        {
+            "position": "Full Stack Developer",
+            "company": "Hotel Wyndham Concorde",
+            "location": "Venezuela",
+            "period": "May 2019 - February 2021",
+            "companyDescription": "Led innovative projects at the luxurious 5-star resort Wyndham Concorde Isla Margarita.",
+            "projects": [
+                "Development of the \"Club Concorde\" system to manage memberships, maintain operations during the pandemic, and generate sales reports.",
+                "Development of a QR code reader for Club Concorde membership cards, ensuring access control during the COVID-19 pandemic.",
+                "Creation of a chatbot using Twilio's API to facilitate hotel reservations and services.",
+                "Development of a QR code system on bracelets for \"Reserva Fiestas\" events, reducing customer waiting times.",
+                "Development of an email marketing tool to attract and retain customers through mass email campaigns.",
+                "Creation of the WordPress plugin \"Reserva Fiestas\" for online ticket sales, streamlining the ticket sales process for events."
+            ],
+            "technologies": {
+                "languages": [
+                    "PHP 7.4",
+                    "Python 3.10",
+                    "JavaScript ES6",
+                    "SQL"
+                ],
+                "frameworks": [
+                    "Laravel 5.8",
+                    "Laravel 6",
+                    "Flask 1.1",
+                    "Bulma 0.9",
+                    "jQuery 3.4"
+                ],
+                "developmentEnvironment": [
+                    "Apache 2.4",
+                    "Ngrok 2.3",
+                    "MySQL 8.0",
+                    "WordPress 5.8",
+                    "Ubuntu on WSL 2"
+                ],
+                "platforms": [
+                    "GoDaddy",
+                    "Twilio",
+                    "Dreamhost",
+                    "MailGun"
+                ]
+            }
+        },
+        {
+            "position": "Full Stack Developer",
+            "company": "Hotel Margarita Real",
+            "location": "Venezuela",
+            "period": "September 2016 - May 2019",
+            "companyDescription": "Developed projects to improve the hotel's operations and guest experience.",
+            "projects": [
+                "Automated tool to monitor workstations of staff, providing control over the use of computers and devices on the hotel network.",
+                "Guest room registration and assignment system to improve check-in and check-out processes.",
+                "Development of automation scripts to back up databases, ensuring data integrity for the company."
+            ],
+            "technologies": {
+                "languages": [
+                    "PHP 7.4",
+                    "Python 3.8",
+                    "JavaScript ES6",
+                    "SQL"
+                ],
+                "frameworks": [
+                    "Bulma 0.9",
+                    "jQuery 3.4",
+                    "UniFi API client 5.0"
+                ],
+                "developmentEnvironment": [
+                    "Apache 2.4",
+                    "MySQL 8.0",
+                    "Ubuntu 18.04"
+                ],
+                "platforms": [
+                    "GoDaddy"
+                ]
+            }
+        },
+        {
+            "position": "Full Stack Developer",
+            "company": "Voltium, C.A.",
+            "location": "Venezuela",
+            "period": "September 2012 - May 2016",
+            "companyDescription": "",
+            "projects": [
+                "Developed an e-commerce website and inventory management system for a technology store."
+            ],
+            "technologies": {
+                "languages": [
+                    "PHP 5.3",
+                    "SQL"
+                ],
+                "frameworks": [
+                    "jQuery 3.4"
+                ],
+                "developmentEnvironment": [
+                    "Apache 2.4",
+                    "PHPMyAdmin 4.6",
+                    "MySQL 5.7",
+                    "Ubuntu 16.04"
+                ],
+                "platforms": [
+                    "GoDaddy"
+                ]
+            }
+        }
+    ],
+    "education": {
+        "universities": [
+            {
+                "title": "Systems Engineering",
+                "name": "Instituto Politécnico Santiago Mariño"
+            }
+        ],
+        "courses": [
+            {
+                "name": "Secure Development",
+                "institution": "Educacion IT",
+                "link": "https://api.educacionit.com/pdf/certificados/ronald-britos-819848/63453"
+            },
+            {
+                "name": "Secure Software Development",
+                "institution": "Udemy",
+                "link": "https://udemy-certificate.s3.amazonaws.com/pdf/UC-cabec80b-c848-458f-b791-1ad21c1e5f68.pdf"
+            },
+            {
+                "name": "Angular 13",
+                "institution": "Udemy",
+                "link": "https://api.alumni.education/course/certificate/generate?hash=1b6bca49-b1cd-4f54-acae-bc9453695fc3&format=pdf"
+            },
+            {
+                "name": "Front End Development Libraries",
+                "institution": "FreeCodeCamp",
+                "link": "https://www.freecodecamp.org/espanol/certification/ronaldrbb/front-end-development-libraries"
+            }
+        ]
+    }
+}
