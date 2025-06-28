@@ -17,9 +17,9 @@ export default class Header extends React.Component {
     render() {
         return (
             <>
-                <div style={{ textAlign: "center" }}>
+                {/* <div style={{ textAlign: "center" }}>
                     <button className="button is-link is-inverted is-size-7" onClick={ this.props.toggleLang}>{this.state.buttonContent}</button>
-                </div>
+                </div> */}
                 <div className="columns is-vcentered">
                     <div className="column">
                         <figure className="image is-128x128">

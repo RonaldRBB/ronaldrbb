@@ -5,7 +5,7 @@
     "details": {
         "location": "CABA, Argentina",
         "email": "ronaldbello2@gmail.com",
-        "phone": "+54 9 11 3946-4316"
+        "phone": "+54 9 11 3561-0976"
     },
     "links": [
         {
@@ -34,9 +34,39 @@
     "experience": [
         {
             "position": "Desarrollador Backend",
+            "company": "CasinoSoft.vip",
+            "location": "Argentina",
+            "period": "Abril 2024 - Actualidad",
+            "companyDescription": "Empresa especializada en proporcionar soluciones de software para compañías de apuestas.",
+            "projects": [
+                "Análisis, diseño, desarrollo y documentación de la API REST para generar apuestas.",
+                "Análisis, diseño y refactorización de un monolito de apuestas, migrando de PHP 7.4 a PHP 8.2."
+            ],
+            "technologies": {
+                "languages": [
+                    "PHP 8.2",
+                    "PHP 7.4",
+                    "SQL"
+                ],
+                "frameworks": [
+                    "Laravel 11",
+                    "Laravel 7"
+                ],
+                "developmentEnvironment": [
+                    "Docker 24",
+                    "PostgreSQL 16.4",
+                    "Apache 2.4"
+                ],
+                "platforms": [
+                    "AWS"
+                ]
+            }
+        },
+        {
+            "position": "Desarrollador Backend",
             "company": "Cobro Digital S.R.L.",
             "location": "Argentina",
-            "period": "Enero 2022 - Actualidad",
+            "period": "Enero 2022 - Abril 2024",
             "companyDescription": "Cobro Digital ofrece soluciones personalizadas de cobranza, recaudación y pagos, con certificación PCI para transacciones seguras con tarjetas de crédito y débito.",
             "projects": [
                 "Creación de una API microservicio antifraude para reducir la probabilidad de fraude en pagos con tarjeta de crédito.",

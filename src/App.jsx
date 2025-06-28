@@ -31,6 +31,6 @@ export default class App extends React.Component {
         );
     }
     render() {
-        return this.webVersion();
+        return this.pdfVersion();
     }
 }

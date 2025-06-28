@@ -80,8 +80,8 @@ export default class Aside extends React.Component {
                 {this.getLinks()}
                 <h2 className="title is-5">{this.state.languagesTitle}</h2>
                 {this.getLanguages()}
-                <h2 className="title is-5">{this.state.cvFileTitle}</h2>
-                {this.getCvFile()}
+                {/* <h2 className="title is-5">{this.state.cvFileTitle}</h2>
+                {this.getCvFile()} */}
             </div>
         );
     }
