@@ -60,7 +60,7 @@ export default class Aside extends React.Component {
                             <a
                                 key={"aside_button-" + pdf.lang}
                                 download=""
-                                href={`${process.env.PUBLIC_URL}/files/${pdf.file_name}`}
+                                href={`${import.meta.env.BASE_URL}files/${pdf.file_name}`}
                                 className="button is-link"
                             >
                                 {pdf.lang}

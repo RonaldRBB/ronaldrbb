@@ -4,7 +4,7 @@ export default class Header extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            profilePictureUrl: process.env.PUBLIC_URL + "/img/profile.jpeg",
+            profilePictureUrl: `${import.meta.env.BASE_URL}img/profile.jpeg`,
             buttonContent: "CV en español"
         };
     }
